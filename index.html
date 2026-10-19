@@ -36,7 +36,7 @@ section.flow>h2{margin:0 0 6px;font-size:28px}
 section.flow>p{margin:0 0 28px;color:#4B5563;max-width:80ch;line-height:1.6;font-size:15px}
 .board{display:flex;flex-wrap:wrap;gap:44px 36px}
 figure.shot{margin:0;width:406px;display:flex;flex-direction:column;gap:14px;scroll-margin-top:24px}
-figcaption{display:flex;flex-direction:column;gap:3px;min-height:106px}
+figcaption{display:flex;flex-direction:column;gap:3px;min-height:118px}
 figcaption b{font-size:15px}
 figcaption b em{font-style:normal;color:var(--turq-ink);margin-right:8px;font-variant-numeric:tabular-nums}
 figcaption span{font-size:13px;color:#4B5563;line-height:1.5}
@@ -261,7 +261,7 @@ html{scroll-behavior:smooth}
       <span><i class="sw" style="background:#F0F0F0"></i>Inputs</span>
     </div>
     <div class="legend" style="margin-top:10px">
-      <span><span class="soon">Coming soon</span>in the app: not live for this member yet</span>
+      <span><span class="soon">Coming soon</span>not yet live for this member</span>
       <span>No badge = Phase 1</span><span><i class="ph p2" style="margin:0">Phase 2</i>network expansion</span><span><i class="ph p3" style="margin:0">Phase 3</i>telehealth, care and delivery</span>
     </div>
   </div>
@@ -272,47 +272,47 @@ html{scroll-behavior:smooth}
 <p style="margin:16px 0 0;font-size:13px;color:#4B5563">All names, numbers and amounts are sample data. <b>[Insurer name]</b> stands for Al Ettihad, the anchor insurer, and <b>[TPA]</b> for iCare, the anchor TPA. Both stay placeholders until their branding is supplied. Payment methods shown are examples until a gateway is chosen.</p>
 
 <div class="howto" style="margin-top:22px">
-  <div><b>One app, no country versions</b><span>Every member gets the same tabs and the same screens. Nothing is hidden or swapped by country.</span></div>
+  <div><b>One app, no country versions</b><span>Every member gets the same tabs and screens, wherever they live.</span></div>
   <ol>
-    <li><b>Same view for everyone</b><span>Vault, Results, Insurance, Health and More look identical wherever the member is. Language (English or Arabic) is the only choice, and it is the member's.</span></li>
+    <li><b>Same view for everyone</b><span>The five tabs look the same in every country. The only choice is language, English or Arabic, and the member makes it.</span></li>
     <li><b>Not live yet: Coming soon</b><span>A feature that isn't available to this member keeps its place on the screen, greyed, with a <span class="soon">Coming soon</span> tag.</span></li>
-    <li><b>Tap it: Coming soon screen</b><span>It explains what is coming and offers Notify me. Never an error, never an empty tab. See 3.4 and 5.2.</span></li>
-    <li><b>Why a feature isn't live</b><span>The member's insurer or lab isn't connected yet, or the feature ships in a later phase (badges on this board).</span></li>
+    <li><b>Tap it: Coming soon screen</b><span>It explains what is coming and offers Notify me, instead of an error or an empty tab. See 3.4 and 5.2.</span></li>
+    <li><b>Why a feature isn't live</b><span>The member's insurer or lab isn't connected yet, or the feature ships in a later phase (shown with a phase badge).</span></li>
   </ol>
 </div>
 
-<!-- ======================= REVIEW RESPONSE (v4) ======================= -->
+<!-- ======================= REVIEW RESPONSE ======================= -->
 <section class="flow" id="f-review">
 <h2>0 · Response to the 18 October review</h2>
-<p>Each of the sixteen comments, with what changed and where to find it. <b>Designed</b> means the screens are on this board. <b>Proposal</b> means a written answer below that needs sign-off. <b>Needs a partner</b> means it can't be closed by MedVault alone. Screen numbers used in the review are unchanged, so its references still point to the right screens.</p>
+<p>Each of the sixteen comments, what changed and where to find it. <b>Designed</b> items are shown as screens, <b>Proposal</b> items are written up below for sign-off, and <b>Needs a partner</b> items depend on someone outside MedVault. Screen numbers from the review are unchanged.</p>
 
 <div class="rm"><div class="rmx"><table>
 <thead><tr><th>#</th><th>Comment</th><th>Response</th><th>Where</th><th>Status</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Booking has no flow</td><td>Request and confirm: the member asks for a service, a day and a time window, and the provider confirms or offers another time. Pay at the provider or pay now. Live slots come in Phase 2. Booking appears in Coming up, the action centre and reminders.</td><td><a href="#s-book">5.26</a>, <a href="#s-book-sent">5.27</a>, <a href="#s-book-confirmed">5.28</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Fee model to decide</span></td></tr>
-<tr><td>2</td><td>Share links need stronger controls</td><td>A 6-digit code is on by default and is passed on separately from the link. Default expiry drops to 72 hours for results and reports. Every open is logged with time and device, and any link can be stopped. Reports show name and age, never the full date of birth.</td><td><a href="#s-record-view">4.3</a>, <a href="#s-share-links">4.7</a>, <a href="#s-share-code">4.8</a>, <a href="#s-report-share">7.12</a>, <a href="#s-report-doctor">7.13</a></td><td><span class="pill ok">Designed</span></td></tr>
-<tr><td>3</td><td>Core screens missing</td><td>Log in, forgot password, new password, guest mode, Face ID set-up, the notification pre-prompt, a refused permission, account deletion with confirmation, and the offline and failure states.</td><td><a href="#s-login">1.6</a> to <a href="#s-perm-off">1.12</a>, <a href="#s-delete">8.4</a> to <a href="#s-err-server">8.7</a></td><td><span class="pill ok">Designed</span></td></tr>
-<tr><td>4</td><td>No consent at sign-up</td><td>Separate, unticked consents before the account exists: terms and privacy, health data, sharing with the insurer, and marketing (optional). Each is recorded with its version and date, and can be withdrawn in More.</td><td><a href="#s-consent">2.7</a>, <a href="#s-consent-ar">10.10</a>, <a href="#s-privacy">8.9</a></td><td><span class="pill ok">Designed</span> <span class="pill bad">Needs legal advice: LB, IQ</span></td></tr>
-<tr><td>5</td><td>Vault has no action centre; adjustments and disputes</td><td>Vault opens with "Needs your attention". It gathers every item waiting on the member: claims, co-pays, approvals, bookings and renewal. A partly approved claim shows each line with its reason, and the member can question the decision.</td><td><a href="#s-home">3.1</a>, <a href="#s-attention">3.6</a>, <a href="#s-claim-partial">5.20</a>, <a href="#s-dispute">5.21</a></td><td><span class="pill ok">Designed</span></td></tr>
-<tr><td>6</td><td>Claim submission is manual</td><td>Start from a visit or payment MedVault already holds. The provider field autocompletes from the network. Documents attach from Results, Prescriptions and receipts. Unsent claims are kept as drafts. Invoice scanning is marked for Phase 2.</td><td><a href="#s-newclaim">5.12</a>, <a href="#s-docs">5.13</a>, <a href="#s-attach">5.19</a>, <a href="#s-claims">5.10</a></td><td><span class="pill ok">Designed</span></td></tr>
-<tr><td>7</td><td>Benefit data model unclear</td><td>A proposed model: limits at three levels, each per person or shared by the family; "used" means paid plus approved, with pending shown apart; co-pay is set by date of service at renewal. The overall limit now leads the Table of benefits.</td><td><a href="#rv-benefits">Model below</a>, <a href="#s-benefits">5.5</a></td><td><span class="pill warn">Proposal · confirm with Al Ettihad, iCare</span></td></tr>
-<tr><td>8</td><td>Card QR lacks a verifier</td><td>The QR is now a signed code that refreshes every minute, with a 24-hour code for offline use, so a screenshot soon stops working. Providers check it in a verifier that shows eligibility only, never health data.</td><td><a href="#s-card">5.3</a>, <a href="#s-verify">5.25</a>, <a href="#rv-qr">model below</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Portal owner to decide</span></td></tr>
-<tr><td>9</td><td>Arabic coverage is thin</td><td>Five more Arabic screens cover what the review called untested: gauges, a form, a chart, digit style and consent. That brings the Arabic set to eleven. The full Arabic board follows once the English copy is frozen.</td><td><a href="#s-result-ar">10.6</a> to <a href="#s-consent-ar">10.10</a></td><td><span class="pill info">In progress</span></td></tr>
-<tr><td>10</td><td>Notification privacy gap</td><td>Lock-screen details are hidden by default for every type: results, claims, approvals, payments and reminders. They read "You have a new update". Family names are hidden separately.</td><td><a href="#s-notif-settings">8.8</a>, <a href="#s-notifs">3.5</a>, <a href="#s-reminder">7.8</a></td><td><span class="pill ok">Designed</span></td></tr>
-<tr><td>11</td><td>Payment states missing</td><td>The full state machine below. Pending covers bank transfer and branch payments, with a reference and a deadline. Failed says what happened and that nothing was charged, with retry or another method.</td><td><a href="#s-payments">5.17</a>, <a href="#s-pay-pending">5.23</a>, <a href="#s-pay-failed">5.24</a>, <a href="#rv-pay">diagram</a></td><td><span class="pill ok">Designed</span></td></tr>
-<tr><td>12</td><td>Accessibility not specified</td><td>An accessibility spec, with the board's actual contrast failures measured and fixes proposed. Vault shown at the largest text size.</td><td><a href="#rv-a11y">Spec below</a>, <a href="#s-a11y">3.9</a></td><td><span class="pill warn">Spec · prototype test to run</span></td></tr>
-<tr><td>13</td><td>Governance of the anchor insurer</td><td>Data separation enforced three ways: contract, system design and independent audit. Members see what the insurer can and cannot see, and who has opened their data.</td><td><a href="#rv-gov">Below</a>, <a href="#s-privacy">8.9</a></td><td><span class="pill bad">Needs legal and related-party terms</span></td></tr>
-<tr><td>14</td><td>AI assistant decisions open</td><td>A decision record to complete before any build, a clinician-reviewed and insurer-reviewed test set, and a consent screen before first use.</td><td><a href="#rv-ai">Record below</a>, <a href="#s-ai-consent">9.5</a></td><td><span class="pill warn">Decision needed</span></td></tr>
-<tr><td>15</td><td>Support and offline model</td><td>A conversation inside each claim, with the reply time shown and escalation once it is overdue. Support tiers with response times, and an offline matrix for every feature.</td><td><a href="#s-claim-thread">5.22</a>, <a href="#s-help">8.10</a>, <a href="#rv-offline">matrix below</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Response times to sign off</span></td></tr>
-<tr><td>16</td><td>No emergency section</td><td>Emergency is one tap from every Vault state, from guest mode and from More. It has call buttons, the nearest 24-hour emergency departments in the network on a map, location sharing and the card. It works offline. Proposed for Phase 1: it needs no partner integration.</td><td><a href="#s-emergency">3.7</a>, <a href="#s-emergency-map">3.8</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Numbers to confirm per country</span></td></tr>
+<tr><td>1</td><td>Booking has no flow</td><td>The member requests a service, day and time window, and the provider confirms or suggests another time. Pay at the provider or in the app. Live slots follow in Phase 2.</td><td><a href="#s-book">5.26</a>, <a href="#s-book-sent">5.27</a>, <a href="#s-book-confirmed">5.28</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Fee model to decide</span></td></tr>
+<tr><td>2</td><td>Share links need stronger controls</td><td>A 6-digit code, shared separately, is on by default. Links expire after 72 hours by default. Every view is logged and any link can be stopped. Reports show name and age only.</td><td><a href="#s-record-view">4.3</a>, <a href="#s-share-links">4.7</a>, <a href="#s-share-code">4.8</a>, <a href="#s-report-share">7.12</a>, <a href="#s-report-doctor">7.13</a></td><td><span class="pill ok">Designed</span></td></tr>
+<tr><td>3</td><td>Core screens missing</td><td>Log in, password reset, guest mode, Face ID set-up, permission prompts, account deletion, and offline and error states.</td><td><a href="#s-login">1.6</a> to <a href="#s-perm-off">1.12</a>, <a href="#s-delete">8.4</a> to <a href="#s-err-server">8.7</a></td><td><span class="pill ok">Designed</span></td></tr>
+<tr><td>4</td><td>No consent at sign-up</td><td>Separate, unticked consents before the account is created, for terms, health data, insurer sharing and marketing. Each is stored with its wording and date, and can be withdrawn in More.</td><td><a href="#s-consent">2.7</a>, <a href="#s-consent-ar">10.10</a>, <a href="#s-privacy">8.9</a></td><td><span class="pill ok">Designed</span> <span class="pill bad">Needs legal advice: LB, IQ</span></td></tr>
+<tr><td>5</td><td>Vault has no action centre; adjustments and disputes</td><td>Vault now opens with Needs your attention, which collects claims, co-pays, approvals, bookings and renewal. Partly approved claims show each line with its reason and can be disputed.</td><td><a href="#s-home">3.1</a>, <a href="#s-attention">3.6</a>, <a href="#s-claim-partial">5.20</a>, <a href="#s-dispute">5.21</a></td><td><span class="pill ok">Designed</span></td></tr>
+<tr><td>6</td><td>Claim submission is manual</td><td>Claims start from a visit or payment already in MedVault, with provider autocomplete and documents attached from Results or Prescriptions. Unsent claims stay as drafts. Invoice scanning in Phase 2.</td><td><a href="#s-newclaim">5.12</a>, <a href="#s-docs">5.13</a>, <a href="#s-attach">5.19</a>, <a href="#s-claims">5.10</a></td><td><span class="pill ok">Designed</span></td></tr>
+<tr><td>7</td><td>Benefit data model unclear</td><td>A proposed model with limits at three levels, per person or per family. Used means paid plus approved, with pending shown separately. The overall limit now leads the Table of benefits.</td><td><a href="#rv-benefits">Model below</a>, <a href="#s-benefits">5.5</a></td><td><span class="pill warn">Proposal · confirm with Al Ettihad, iCare</span></td></tr>
+<tr><td>8</td><td>Card QR lacks a verifier</td><td>The QR is now a signed code that refreshes every minute, with a 24-hour offline code, so screenshots expire. Providers scan it in a verifier that shows eligibility only.</td><td><a href="#s-card">5.3</a>, <a href="#s-verify">5.25</a>, <a href="#rv-qr">model below</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Portal owner to decide</span></td></tr>
+<tr><td>9</td><td>Arabic coverage is thin</td><td>Five new Arabic screens cover gauges, a form, a chart, digit style and consent, bringing the Arabic set to eleven. Every screen follows in Arabic once the English copy is signed off.</td><td><a href="#s-result-ar">10.6</a> to <a href="#s-consent-ar">10.10</a></td><td><span class="pill info">In progress</span></td></tr>
+<tr><td>10</td><td>Notification privacy gap</td><td>Lock-screen details are hidden by default for every notification type, which shows only "You have a new update". Family names have their own setting.</td><td><a href="#s-notif-settings">8.8</a>, <a href="#s-notifs">3.5</a>, <a href="#s-reminder">7.8</a></td><td><span class="pill ok">Designed</span></td></tr>
+<tr><td>11</td><td>Payment states missing</td><td>A full payment state machine, below. Bank transfer and branch payments show as pending with a reference and deadline. Failures give the reason, confirm no charge and offer a retry.</td><td><a href="#s-payments">5.17</a>, <a href="#s-pay-pending">5.23</a>, <a href="#s-pay-failed">5.24</a>, <a href="#rv-pay">diagram</a></td><td><span class="pill ok">Designed</span></td></tr>
+<tr><td>12</td><td>Accessibility not specified</td><td>An accessibility spec with measured contrast failures and proposed fixes, plus Vault at the largest text size.</td><td><a href="#rv-a11y">Spec below</a>, <a href="#s-a11y">3.9</a></td><td><span class="pill warn">Spec · prototype test to run</span></td></tr>
+<tr><td>13</td><td>Governance of the anchor insurer</td><td>Data separation backed by contract, system design and independent audit. Members can see what the insurer has access to and who has opened their data.</td><td><a href="#rv-gov">Below</a>, <a href="#s-privacy">8.9</a></td><td><span class="pill bad">Needs legal and related-party terms</span></td></tr>
+<tr><td>14</td><td>AI assistant decisions open</td><td>A decision record to sign off before build, a test set reviewed by clinicians and the insurer, and a consent screen before first use.</td><td><a href="#rv-ai">Record below</a>, <a href="#s-ai-consent">9.5</a></td><td><span class="pill warn">Decision needed</span></td></tr>
+<tr><td>15</td><td>Support and offline model</td><td>Each claim has its own message thread, with the expected reply time and escalation when overdue. Support tiers, response times and an offline matrix are below.</td><td><a href="#s-claim-thread">5.22</a>, <a href="#s-help">8.10</a>, <a href="#rv-offline">matrix below</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Response times to sign off</span></td></tr>
+<tr><td>16</td><td>No emergency section</td><td>One tap from Vault, guest mode and More, with call buttons, the nearest 24-hour network emergency departments on a map, location sharing and the card. Works offline. Proposed for Phase 1.</td><td><a href="#s-emergency">3.7</a>, <a href="#s-emergency-map">3.8</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Numbers to confirm per country</span></td></tr>
 </tbody></table></div></div>
 
 <div class="deps">
   <div class="dep" id="rv-benefits"><h3><span class="dp ins">#7</span>Benefit data model · proposal</h3><ul>
     <li><b>Levels:</b> overall annual limit › benefit (outpatient, labs and imaging, medicines, hospital, maternity…) › sub-limit (for example MRI per year, sessions per approval).</li>
     <li><b>Scope per limit:</b> per member, shared by the family, or both (for example 5,000,000 family and 2,000,000 per person). The app shows whichever runs out first.</li>
-    <li><b>Used</b> = paid + approved and not yet paid. <b>Pending</b> = submitted claims plus approved pre-approvals not yet billed, shown apart and never subtracted twice. <b>Left</b> = limit − used.</li>
-    <li><b>Co-pay</b> per benefit and network tier (in network, outside), with an optional cap per visit. Plans are versioned. A claim uses the version in force on the <b>date of service</b>, not the date it was sent, so renewal never re-prices old visits.</li>
+    <li><b>Used</b> = paid + approved and not yet paid. <b>Pending</b> = submitted claims plus approved pre-approvals not yet billed, shown separately and counted once. <b>Left</b> = limit − used.</li>
+    <li><b>Co-pay</b> per benefit and network tier (in network, outside), with an optional cap per visit. Plans are versioned, and each claim uses the plan in force on the <b>date of service</b>, so renewal doesn't re-price earlier visits.</li>
     <li>Waiting periods per benefit, with a start date. Nothing carries over between years unless the plan says so.</li>
     <li>Source of truth: Al Ettihad for plan definitions, iCare for balances. MedVault caches both and always shows "updated at".</li>
   </ul><span class="blk">To confirm with the insurer: the family-and-person case, whether pre-approvals reserve balance, and the renewal cut-over rule.</span></div>
@@ -328,13 +328,13 @@ html{scroll-behavior:smooth}
     <li><b>Contract:</b> a data processing agreement and related-party terms with Al Ettihad. Purpose is limited to cover and claims. No access to results, readings, medications or prescriptions, except documents the member attaches to a claim. Audit rights for an independent auditor.</li>
     <li><b>System design:</b> health data and insurance data in separate stores. Insurer and TPA integration accounts have no read path to health stores. Staff access is role-based, and every access is logged in an append-only log.</li>
     <li><b>Assurance:</b> quarterly access reviews, a yearly independent audit, and the member-facing access history (8.9).</li>
-    <li><b>Neutrality:</b> sponsored banners are always labelled. Network ranking rules are written down and do not quietly favour any provider.</li>
-  </ul><span class="blk">The promise "your insurer never sees this" (7.2) goes live only once the agreement is signed.</span></div>
+    <li><b>Neutrality:</b> sponsored banners are always labelled. Network ranking rules are documented and applied equally to every provider.</li>
+  </ul><span class="blk">The in-app line "your insurer never sees this" (7.2) ships only after the agreement is signed.</span></div>
 
   <div class="dep" id="rv-ai"><h3><span class="dp ai">#14</span>AI assistant decision record</h3><ul>
     <li>Vendor and model. Processing region, and whether Iraqi member data must stay in-country.</li>
     <li>Data sent: the minimum, without names. Retention, training use (none), and voice recordings deleted after transcription.</li>
-    <li>Consent wording (9.5), a per-source opt-out, and a kill switch per insurer, as today's AI Summary has.</li>
+    <li>Consent wording (9.5), a per-source opt-out, and a kill switch per insurer, as the existing AI summary has.</li>
     <li>Language: English, Modern Standard Arabic, and Iraqi Arabic voice, with a measured transcription error rate on an Iraqi dialect set before launch.</li>
     <li>Safety rules: never "normal" without a lab range; every cover answer cites the plan rule and says the insurer decides; no diagnosis.</li>
     <li>Test set: 200 result questions reviewed by clinicians and 200 cover questions reviewed by the insurer, with pass thresholds agreed in advance. Wrong cover answers are tracked as incidents.</li>
@@ -345,20 +345,20 @@ html{scroll-behavior:smooth}
     <li><b>MedVault support</b> (app, account, booking, payments): chat, first reply within 4 working hours, resolved within 2 working days.</li>
     <li><b>[TPA]</b> (claims, approvals): the thread inside the claim, first reply within 2 working days. Escalation opens once that is overdue and reaches a supervisor and MedVault operations.</li>
     <li><b>Formal complaint or appeal</b> to [Insurer name]: within the regulator's timeline (placeholder: 30 days).</li>
-    <li>Emergencies never go through chat. The app points to the call buttons (3.7).</li>
-  </ul><span class="blk">Response times are shown in the app as they actually are ("typical reply 3 h today"), not as fixed text.</span></div>
+    <li>Chat directs emergencies to the call buttons (3.7).</li>
+  </ul><span class="blk">The app shows live response times ("typical reply 3 h today") instead of fixed text.</span></div>
 
   <div class="dep" id="rv-consent"><h3><span class="dp none">#4</span>Consent and legal</h3><ul>
     <li>Separate consents, none pre-ticked: terms and privacy; health data; sharing with the insurer and TPA, needed only to link insurance; marketing.</li>
     <li>Each is stored with its version, language, time and channel. When the wording changes, members are asked again.</li>
-    <li>Withdrawal is as easy as giving consent (8.9). Withdrawing insurer sharing unlinks the insurance; it never deletes the account.</li>
+    <li>Withdrawal is as easy as giving consent (8.9). Withdrawing insurer sharing unlinks the insurance but keeps the account.</li>
   </ul><span class="blk">Wording is a placeholder. Counsel in Lebanon and Iraq to confirm the legal basis, age of consent for family members, and record keeping.</span></div>
 </div>
 
 <h3 id="rv-pay" style="margin:34px 0 10px;font-size:18px">#11 · Payment state machine</h3>
 <div class="rm" style="padding:18px">
 <h3 style="margin:0 0 4px;font-size:16px">Payment states</h3>
-<p style="margin:0 0 12px;font-size:13px;color:#4B5563;line-height:1.55">One state machine for every payment: co-pays, self-pay bookings and premiums. A state marked with a bell sends the member a notification when it is entered.</p>
+<p style="margin:0 0 12px;font-size:13px;color:#4B5563;line-height:1.55">One state machine covers co-pays, self-pay bookings and premiums. A state marked with a bell sends the member a notification when it is entered.</p>
 <div class="rmx">
 <svg viewBox="0 0 1060 420" width="100%" style="display:block;min-width:760px;max-width:1100px;font-family:Poppins,system-ui,sans-serif" role="img" aria-label="Payment state machine: Created goes to Authorising for cards and wallets, or to Awaiting offline payment for bank transfer and branch. Authorising goes to Paid or Failed. Failed can be retried or expires. Awaiting offline payment goes to Paid when money arrives or Expired after the deadline. Paid can go to Refund requested, then Refunded or Partly refunded.">
   <defs><marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0D1B4B"/></marker></defs>
@@ -408,7 +408,7 @@ html{scroll-behavior:smooth}
 <tr><td>Created</td><td>The item under To pay, with its due date and Pay now.</td><td>5.17</td></tr>
 <tr><td>Authorising</td><td>A Processing pill on the pay sheet. Safe to leave; the result arrives as a notification, and Pay now is disabled so nobody pays twice.</td><td>5.18, 5.24</td></tr>
 <tr><td>Paid</td><td>Paid pill, method and receipt. Notified.</td><td>5.17</td></tr>
-<tr><td>Failed</td><td>The gateway's reason in plain words, "Nothing was charged", Try again and Use another method. Notified. Stays in Pending with Retry.</td><td>5.24</td></tr>
+<tr><td>Failed</td><td>The gateway's reason, "Nothing was charged", Try again and Use another method. Notified. Stays in Pending with Retry.</td><td>5.24</td></tr>
 <tr><td>Awaiting offline payment</td><td>Reference to quote, where to pay, deadline countdown, what it means for cover. Notified on entry and 2 days before the deadline.</td><td>5.23</td></tr>
 <tr><td>Expired</td><td>Card or wallet: back under To pay, silently. Offline deadline passed: notified, with what it means (booking released, renewal not taken).</td><td>5.17</td></tr>
 <tr><td>Refund requested / Refunded</td><td>Refund amount, method it returns to and the expected date. Notified when it lands.</td><td>5.17</td></tr>
@@ -426,9 +426,9 @@ html{scroll-behavior:smooth}
 <tr><td>Medication and test reminders</td><td><span class="pill ok">Works</span></td><td>Local notifications. Doses ticked off offline sync later.</td></tr>
 <tr><td>Results already opened, reports downloaded</td><td><span class="pill info">Read-only</span></td><td>Stored encrypted on the device, with their age shown. New results need a connection.</td></tr>
 <tr><td>Benefits, balances, claims, approvals</td><td><span class="pill info">Read-only</span></td><td>Last-known values with "updated at" (3.3). No action buttons.</td></tr>
-<tr><td>New claim, prescription, result upload</td><td><span class="pill warn">Draft only</span></td><td>Kept as a draft with photos. It sends only when the member taps Send online. Nothing is sent silently.</td></tr>
+<tr><td>New claim, prescription, result upload</td><td><span class="pill warn">Draft only</span></td><td>Saved as a draft with photos, and sent only when the member taps Send while online.</td></tr>
 <tr><td>Health figures</td><td><span class="pill warn">Delayed</span></td><td>Devices keep writing to the phone's health store. MedVault catches up at the next sync.</td></tr>
-<tr><td>Payments, booking, sharing, assistant, linking insurance</td><td><span class="pill mute">Needs connection</span></td><td>The button stays visible and explains why it can't run now (8.6). Never a sign-out.</td></tr>
+<tr><td>Payments, booking, sharing, assistant, linking insurance</td><td><span class="pill mute">Needs connection</span></td><td>Buttons stay visible and explain that a connection is needed (8.6). The member stays signed in.</td></tr>
 </tbody></table></div></div>
 
 <h3 id="rv-a11y" style="margin:34px 0 10px;font-size:18px">#12 · Accessibility spec</h3>
@@ -438,15 +438,15 @@ html{scroll-behavior:smooth}
     <li>Tested in the prototype with VoiceOver, TalkBack, 200% text, Arabic screen readers, a colour-blindness simulation and switch control. Repeated before each release.</li>
   </ul></div>
   <div class="dep"><h3>Text and layout</h3><ul>
-    <li>Dynamic Type and Android font scale up to 200%. Layouts reflow to one column, and amounts, statuses and buttons never truncate (3.9).</li>
+    <li>Dynamic Type and Android font scale up to 200%. Layouts reflow to one column, and amounts, statuses and buttons don't truncate (3.9).</li>
     <li>Tap targets at least 44 pt on iOS and 48 dp on Android. Chips and small pills get an invisible larger hit area.</li>
     <li>Reduce Motion stops the banner carousel and animated progress.</li>
   </ul></div>
   <div class="dep"><h3>Colour and status</h3><ul>
-    <li>Every status has a word, and an icon where it fits. Colour is never the only signal: pills, claim cards, gauges (L/N/H) and Coming soon.</li>
+    <li>Every status has a word, and an icon where it fits. Colour is not the only signal on pills, claim cards, gauges (L/N/H) or Coming soon tags.</li>
     <li>Charts carry a text summary for screen readers, as 7.4 and 7.5 already do.</li>
   </ul></div>
-  <div class="dep"><h3>Measured on this board · to fix</h3><ul>
+  <div class="dep"><h3>Measured contrast · to fix</h3><ul>
     <li>White on turquoise tiles is <b>2.86:1</b> and fails. Use <b>#1F7F7F</b> (4.77:1).</li>
     <li>Inactive tab labels #8A8A8A are <b>3.45:1</b>. Use <b>#6B7280</b> (4.83:1).</li>
     <li>The active tab #1E8C8C is <b>4.05:1</b> at 10 px. Use <b>#187373</b> (5.62:1).</li>
@@ -454,31 +454,31 @@ html{scroll-behavior:smooth}
     <li>The sky-blue greeting name is <b>1.85:1</b>. Use <b>#2F6E8F</b>.</li>
   </ul><span class="blk">These are proposals and are not yet applied to the screens. The turquoise is a brand colour, so the change needs sign-off.</span></div>
   <div class="dep"><h3>Screen readers and forms</h3><ul>
-    <li>Every icon button labelled. Reading order follows the visual order, mirrored in Arabic.</li>
+    <li>Every icon button has a label. Reading order follows the visual order, mirrored in Arabic.</li>
     <li>Amounts read with their currency, and the QR reads as "Insurance code, refreshes in 42 seconds".</li>
-    <li>Labels always visible. Errors in words next to the field, announced when they appear. Time limits such as OTP resend and payment deadlines are announced and can be extended.</li>
+    <li>Labels always visible. Errors shown in text next to the field, announced when they appear. Time limits such as OTP resend and payment deadlines are announced and can be extended.</li>
   </ul></div>
 </div>
 
 <h3 style="margin:34px 0 10px;font-size:18px">#9 · Arabic plan</h3>
 <div class="howto" style="margin:0">
   <ol>
-    <li><b>Now on the board</b><span>Eleven Arabic screens, covering Vault, the card, claims, welcome, linking and the assistant, plus the five components the review flagged: gauges, forms, charts, digits and consent.</span></li>
+    <li><b>Designed so far</b><span>Eleven Arabic screens, covering Vault, the card, claims, welcome, linking and the assistant, plus the five components the review flagged: gauges, forms, charts, digits and consent.</span></li>
     <li><b>Rules settled</b><span>Gauges and time axes run right to left. Numbers, units and member numbers stay left to right inside the Arabic sentence. Western digits by default.</span></li>
     <li><b>Digits</b><span>10.9 shows Eastern Arabic digits for comparison. The insurer chooses; the app could also follow the phone's own setting.</span></li>
-    <li><b>Next</b><span>The full Arabic board, every screen, once the English copy is frozen. Copy is reviewed by an Iraqi Arabic speaker. More languages, such as Kurdish, are an open question.</span></li>
+    <li><b>Next</b><span>Every screen in Arabic, once the English copy is signed off. Copy is reviewed by an Iraqi Arabic speaker. More languages, such as Kurdish, are an open question.</span></li>
   </ol>
 </div>
 </section>
 
 <section class="flow" id="f0">
 <h2>1 · First launch and welcome</h2>
-<p>The same welcome for everyone, everywhere: no country detection and no country picker. The slides walk through the four things MedVault does: results, the insurance card, claims and privacy. Language follows the device and can be changed on the first slide.</p>
+<p>One welcome for every member, with no country detection or picker. Four slides cover results, the insurance card, claims and privacy. Language follows the device and can be changed on the first slide.</p>
 
 <div class="board">
 
 <figure class="shot" id="s-launch">
-<figcaption><b><em>1.1</em>Launch</b><span>Today's splash. Nothing to decide here: the same app opens for every member.</span></figcaption>
+<figcaption><b><em>1.1</em>Launch</b><span>The current splash screen, unchanged. The same app opens for every member.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main" style="align-items:center;justify-content:center;text-align:center">
     <img src="images/logo2.png" alt="" style="height:100px;width:auto">
@@ -492,7 +492,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-lb2">
-<figcaption><b><em>1.2</em>Welcome · 1 of 4</b><span>Results, with the real result gauge and the "results ready" alert. Language is set here, and only here before sign-up.</span></figcaption>
+<figcaption><b><em>1.2</em>Welcome · 1 of 4</b><span>Results, shown with the real result gauge and the results-ready alert. Language can be changed here before sign-up.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><span class="chip" style="padding:6px 12px;background:#fff"><i data-i="globe" data-s="15"></i>English<i data-i="down" data-s="13" data-w="2.4"></i></span><div class="spacer"></div><a href="#s-lb3" style="font-size:14px;font-weight:600;text-decoration:none">Skip</a></div>
@@ -515,7 +515,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-iq1">
-<figcaption><b><em>1.3</em>Welcome · 2 of 4</b><span>The insurance card. Shown to everyone: a member whose insurer isn't connected yet sees Insurance as Coming soon after sign-up, not a different app.</span></figcaption>
+<figcaption><b><em>1.3</em>Welcome · 2 of 4</b><span>The insurance card, shown to everyone. Members whose insurer isn't connected yet see Insurance as Coming soon after sign-up.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-lb2" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><a href="#s-lb3" style="font-size:14px;font-weight:600;text-decoration:none">Skip</a></div>
@@ -542,7 +542,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-iq3">
-<figcaption><b><em>1.4</em>Welcome · 3 of 4</b><span>Claims from the phone.</span></figcaption>
+<figcaption><b><em>1.4</em>Welcome · 3 of 4</b><span>Claiming back from the phone.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-iq1" aria-label="Back"><i data-i="back" data-w="2.4"></i></a></div>
@@ -566,7 +566,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-lb3">
-<figcaption><b><em>1.5</em>Welcome · 4 of 4</b><span>Privacy and Face ID. Ends on today's three login choices, now each designed: create account (2.1), log in (1.6) and guest (1.9).</span></figcaption>
+<figcaption><b><em>1.5</em>Welcome · 4 of 4</b><span>Privacy and Face ID, ending on the three ways in: create account (2.1), log in (1.6) and guest (1.9).</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-iq3" aria-label="Back"><i data-i="back" data-w="2.4"></i></a></div>
@@ -587,7 +587,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-login">
-<figcaption><b><em>1.6</em>Log in</b><span>Mobile and password, as today. A returning member with the lock on can skip typing with Face ID. A wrong password says so in place and keeps what was typed; the guest and sign-up routes stay one tap away.</span></figcaption>
+<figcaption><b><em>1.6</em>Log in</b><span>Mobile and password, with Face ID for returning members who use the lock. A wrong password is flagged in place without clearing the form.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-lb3" aria-label="Back"><i data-i="back" data-w="2.4"></i></a></div>
@@ -612,7 +612,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-forgot">
-<figcaption><b><em>1.7</em>Forgot password</b><span>One field. The reply is the same whether or not the number has an account ("If this number is registered, we've sent a code"), so the screen can't be used to find out who uses MedVault. The code step is the same OTP screen as 2.2.</span></figcaption>
+<figcaption><b><em>1.7</em>Forgot password</b><span>One field. The reply is the same whether or not the number is registered, so the screen can't reveal who uses MedVault. The code step reuses 2.2.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-login" aria-label="Back"><i data-i="back" data-w="2.4"></i></a></div>
@@ -633,7 +633,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-reset">
-<figcaption><b><em>1.8</em>New password</b><span>After the code is accepted. The rules tick off as they're met. Every other phone signed in to this account is signed out, because a reset usually means someone else may know the old password.</span></figcaption>
+<figcaption><b><em>1.8</em>New password</b><span>Set after the code is accepted, with rules ticking off as they're met. Other devices are signed out, since a reset may mean the old password is known.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-forgot" aria-label="Back"><i data-i="back" data-w="2.4"></i></a></div>
@@ -659,7 +659,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-guest">
-<figcaption><b><em>1.9</em>Vault · guest</b><span>"Continue as guest" opens the real app, not a dead end. What needs no identity works: the provider network, emergency numbers and what's coming. Results and the card keep their places, locked, each saying what an account unlocks. Nothing personal is stored.</span></figcaption>
+<figcaption><b><em>1.9</em>Vault · guest</b><span>Guests get the provider network, emergency numbers and what's coming. Results and the card stay in place, locked, each explaining what an account adds. No personal data is stored.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar">
@@ -695,7 +695,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-faceid">
-<figcaption><b><em>1.10</em>Face ID offer</b><span>Shown once, after the first sign-in, and only on a phone with Face ID or a fingerprint enrolled. Turning it on scans straight away, so a scan that fails is found here rather than at the next launch. It's a lock on this phone, not a second password.</span></figcaption>
+<figcaption><b><em>1.10</em>Face ID offer</b><span>Offered once after first sign-in, on phones with biometrics enrolled. Turning it on scans immediately, so a failing scan shows up here. It locks this phone only.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:110px">
     <div class="state">
@@ -719,7 +719,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-perm-notif">
-<figcaption><b><em>1.11</em>Notifications · before the system alert</b><span>Our own screen first, so the member knows what they're agreeing to. The iOS alert only appears after "Allow", and only once the app has drawn its first frame: raising it earlier left App Review looking at a blank launch screen. "Not now" costs nothing; we ask again only when it matters, such as the first claim.</span></figcaption>
+<figcaption><b><em>1.11</em>Notifications · before the system alert</b><span>Explains what we'll send before the iOS alert, which appears only after Allow and once the app has fully loaded. After Not now, we ask again at the first claim.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:100px">
     <div class="state">
@@ -733,7 +733,7 @@ html{scroll-behavior:smooth}
       <div class="med sm"><span class="pi" style="background:rgba(43,169,169,.13);color:var(--turq-ink)"><i data-i="pill" data-s="18"></i></span><span class="t"><b>Reminders</b><span>Medicines, tests and appointments</span></span></div>
     </div>
     <div style="display:flex;gap:10px;margin-top:14px;padding:11px 13px;border-radius:12px;background:rgba(13,27,75,.05)">
-      <i data-i="lock" data-s="17" style="margin-top:1px"></i><p style="margin:0;font-size:12px;line-height:1.5">The lock screen shows "New update in MedVault", never names, tests or amounts, unless you choose otherwise.</p>
+      <i data-i="lock" data-s="17" style="margin-top:1px"></i><p style="margin:0;font-size:12px;line-height:1.5">The lock screen shows "New update in MedVault" without names, tests or amounts, unless you change it.</p>
     </div>
     <div class="spacer"></div>
     <a class="btn" href="#s-home">Allow notifications</a>
@@ -743,7 +743,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-perm-off">
-<figcaption><b><em>1.12</em>A permission that was refused</b><span>The pattern for any refused permission, shown on the claim documents step with the camera. It says why we asked, links straight to Settings, and offers a way through without it. A refused permission never blocks a task.</span></figcaption>
+<figcaption><b><em>1.12</em>A permission that was refused</b><span>The pattern for any refused permission, shown with the camera on the claim documents step. It explains why, links to Settings and offers another way to continue.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-docs" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Documents</h2><span class="cap">2 of 2</span></div>
@@ -771,11 +771,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f1">
 <h2>2 · Sign-up and insurance linking</h2>
-<p>The existing sign-up and OTP, then the new insurance step. Linking never blocks sign-up: a failed check or an unreachable insurer still lets the member in. New in v4: explicit consent (2.7) between the form and the code, recorded with its version and date.</p>
+<p>The current sign-up and OTP, followed by insurance linking. A failed check or an unreachable insurer still lets the member in. Consent (2.7) sits between the form and the code, stored with its wording and date.</p>
 <div class="board">
 
 <figure class="shot" id="s-create">
-<figcaption><b><em>2.1</em>Create account</b><span>The existing form, trimmed. Name and date of birth must match the insurance record, because linking checks them. Continue leads to consent (2.7) before any code is sent or any account exists.</span></figcaption>
+<figcaption><b><em>2.1</em>Create account</b><span>The current form, trimmed. Name and date of birth must match the insurance record. Continue leads to consent (2.7) before any code is sent.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-iq3" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><span class="cap">Step 1 of 3</span></div>
@@ -801,7 +801,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-otp">
-<figcaption><b><em>2.2</em>Verify mobile</b><span>Same OTP boxes as forgot-password today. Sent by SMS to any country code.</span></figcaption>
+<figcaption><b><em>2.2</em>Verify mobile</b><span>The same code entry as password reset, sent by SMS to any country code.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-create" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><span class="cap">Step 2 of 3</span></div>
@@ -826,7 +826,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-link">
-<figcaption><b><em>2.3</em>Link insurance</b><span>The new step. One field; the date of birth from 2.1 is the second check, so nobody can link with a card number alone.</span></figcaption>
+<figcaption><b><em>2.3</em>Link insurance</b><span>One field. The date of birth from 2.1 is the second check, so a card number alone can't link a policy.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-otp" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><span class="cap">Step 3 of 3</span></div>
@@ -884,7 +884,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-nomatch">
-<figcaption><b><em>2.5</em>Not matched</b><span>Same message for "not found" and "details don't match", so the screen never reveals whether a number exists. Five tries a day.</span></figcaption>
+<figcaption><b><em>2.5</em>Not matched</b><span>One message covers "not found" and "details don't match", so the screen doesn't reveal whether a number exists. Five tries a day.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:110px">
     <div class="state">
@@ -906,7 +906,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-pending">
-<figcaption><b><em>2.6</em>Insurer unreachable</b><span>The account is created anyway. Linking retries in the background and a notification confirms it. An outage is never an error and never a sign-out.</span></figcaption>
+<figcaption><b><em>2.6</em>Insurer unreachable</b><span>The account is created anyway. Linking retries in the background and a notification confirms it, so an outage doesn't stop the member.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:110px">
     <div class="state">
@@ -925,7 +925,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-consent">
-<figcaption><b><em>2.7</em>Consent</b><span>Between 2.1 and 2.2, before the account exists. Each consent is its own box, unticked, with its own Read link: agreeing to terms never doubles as agreeing to health-data use. Insurer sharing is asked here or later at 2.3, and only matters for linking. The version and time are stored with each answer. Wording is a placeholder pending legal advice for Lebanon and Iraq.</span></figcaption>
+<figcaption><b><em>2.7</em>Consent</b><span>Shown before the account is created. Each consent has its own unticked box and Read link, and insurer sharing can wait until linking. Wording pending legal advice for Lebanon and Iraq.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-create" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><span class="cap">Step 1 of 3</span></div>
@@ -943,7 +943,7 @@ html{scroll-behavior:smooth}
       </div>
       <div class="card" style="padding:11px 14px;display:flex;gap:12px;align-items:flex-start;box-shadow:none">
         <span style="width:22px;height:22px;border-radius:6px;border:2px solid #C3C8D0;background:#fff;flex:none;margin-top:1px" role="checkbox" aria-checked="false" aria-label="Share with my insurer"></span>
-        <span style="flex:1;display:flex;flex-direction:column;gap:3px"><span style="display:flex;justify-content:space-between;align-items:center;gap:8px"><b style="font-size:13.5px">Share with my insurer</b><span class="pill info" style="font-size:10px;padding:1px 7px">To link insurance</span></span><span class="cap" style="line-height:1.45">[Insurer name] and [TPA] check my cover and handle my claims. Never my readings or medications. Can be given later. <a href="#s-consent" style="font-weight:600;color:var(--navy)">Read</a></span></span>
+        <span style="flex:1;display:flex;flex-direction:column;gap:3px"><span style="display:flex;justify-content:space-between;align-items:center;gap:8px"><b style="font-size:13.5px">Share with my insurer</b><span class="pill info" style="font-size:10px;padding:1px 7px">To link insurance</span></span><span class="cap" style="line-height:1.45">[Insurer name] and [TPA] check my cover and handle my claims. Not my readings or medications. Can be given later. <a href="#s-consent" style="font-weight:600;color:var(--navy)">Read</a></span></span>
       </div>
       <div class="card" style="padding:11px 14px;display:flex;gap:12px;align-items:flex-start;box-shadow:none">
         <span style="width:22px;height:22px;border-radius:6px;border:2px solid #C3C8D0;background:#fff;flex:none;margin-top:1px" role="checkbox" aria-checked="false" aria-label="Offers and health news"></span>
@@ -962,11 +962,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-vault">
 <h2>3 · Vault</h2>
-<p>The main dashboard and the first of the five tabs. The brief asks for four things, and they appear in its order: the latest results with links to the full reports, in-app advertising banners, the insurance summary (card, coverage status and quick links into Insurance), and upcoming reminders for medications, tests and appointments. Every block is a shortcut into another tab; nothing is managed here.</p>
+<p>The first tab and the member's dashboard: latest results with reports, banners, the insurance summary and upcoming reminders for medications, tests and appointments. Each block opens its own tab.</p>
 <div class="board">
 
 <figure class="shot" id="s-home">
-<figcaption><b><em>3.1</em>Vault</b><span>The first tab, in the brief's order, now opening with <b>Needs your attention</b>: anything waiting on the member, from any tab, in one strip that opens the action centre (3.6). Emergency sits in the top bar on every Vault state. Then latest results, the banner, the insurance summary and upcoming reminders.</span></figcaption>
+<figcaption><b><em>3.1</em>Vault</b><span>Opens with <b>Needs your attention</b>, which gathers anything waiting on the member and leads to the action centre (3.6). Emergency sits in the top bar.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar">
@@ -1007,7 +1007,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-notlinked">
-<figcaption><b><em>3.2</em>Vault · no insurance yet</b><span>A self-pay member, or one who skipped linking. Results and reminders work the same. Only the insurance block changes, into one clear prompt.</span></figcaption>
+<figcaption><b><em>3.2</em>Vault · no insurance yet</b><span>For self-pay members or those who skipped linking. Everything works the same except the insurance block, which becomes a prompt to link.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"><div class="spacer"></div><a class="icobtn" href="#s-emergency" aria-label="Emergency" style="color:#B91C1C;border-color:rgba(185,28,28,.25);margin-right:8px"><i data-i="sos" data-s="20" data-w="2"></i></a><a class="icobtn" href="#s-notifs" aria-label="Notifications"><i data-i="bell" data-s="20"></i></a></div>
@@ -1031,7 +1031,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-offline">
-<figcaption><b><em>3.3</em>Vault · insurer unreachable</b><span>Cached figures stay visible with their real age. Never a blank screen, never a sign-out. Results and reminders don't depend on the insurer and stay live.</span></figcaption>
+<figcaption><b><em>3.3</em>Vault · insurer unreachable</b><span>Cached figures stay visible with their age shown, and the member stays signed in. Results and reminders don't depend on the insurer and stay live.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"><div class="spacer"></div><a class="icobtn" href="#s-emergency" aria-label="Emergency" style="color:#B91C1C;border-color:rgba(185,28,28,.25);margin-right:8px"><i data-i="sos" data-s="20" data-w="2"></i></a><a class="icobtn" href="#s-notifs" aria-label="Notifications"><i data-i="bell" data-s="20"></i></a><a class="icobtn" href="#s-card" aria-label="My card" style="margin-left:8px"><i data-i="card" data-s="20"></i></a></div>
@@ -1064,7 +1064,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-soon">
-<figcaption><b><em>3.4</em>Coming soon</b><span>The one pattern for anything not live yet. Here, Ask MedVault before it launches: the button stays where it will be, and tapping it explains what's coming and offers Notify me. The same sheet serves every Coming soon tag in the app.</span></figcaption>
+<figcaption><b><em>3.4</em>Coming soon</b><span>The pattern for anything not yet live, shown here for Ask MedVault. The button keeps its place, and tapping it explains what's coming and offers Notify me.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"><div class="spacer"></div><span class="icobtn"><i data-i="bell" data-s="20"></i></span></div>
@@ -1088,7 +1088,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-notifs">
-<figcaption><b><em>3.5</em>Notifications</b><span>Opened from the bell on Vault. Results, reminders and insurance events in one list, and unread cards keep the navy outline. Details show here, inside the app. On the lock screen every type is hidden by default (8.8), so no name, procedure or amount shows there.</span></figcaption>
+<figcaption><b><em>3.5</em>Notifications</b><span>Results, reminders and insurance events in one list, with unread items outlined. Full details show in the app; the lock screen hides them by default (8.8).</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-home" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Notifications</h2></div>
@@ -1121,7 +1121,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-attention">
-<figcaption><b><em>3.6</em>Needs your attention</b><span>The action centre, opened from the card at the top of Vault. Everything waiting on the member from every tab, in one list, most urgent first. Each item has one button for its next step, and it leaves the list once that step is done.</span></figcaption>
+<figcaption><b><em>3.6</em>Needs your attention</b><span>The action centre: everything waiting on the member, most urgent first. Each item has a single next step and leaves the list once it's done.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-home" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Needs your attention</h2></div>
@@ -1145,7 +1145,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-emergency">
-<figcaption><b><em>3.7</em>Emergency</b><span>One tap from the Vault header, and open to guests. Call buttons first, then the nearest network emergency departments. Numbers are set per country and confirmed before launch; they're stored on the phone, so this screen works with no signal.</span></figcaption>
+<figcaption><b><em>3.7</em>Emergency</b><span>One tap from the Vault header, also open to guests. Call buttons come first, then the nearest network emergency departments. Numbers are stored on the phone, so it works offline.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-home" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Emergency</h2></div>
@@ -1185,7 +1185,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-emergency-map">
-<figcaption><b><em>3.8</em>Emergency departments · map</b><span>Every emergency department open now, network ones in red, others in grey with "Out of network" in words. The sheet gives the ER's own number and the drive time; Directions hands over to the phone's maps app rather than navigating in MedVault.</span></figcaption>
+<figcaption><b><em>3.8</em>Emergency departments · map</b><span>Emergency departments open now, network ones in red and others labelled Out of network. The sheet shows the ER number and drive time; Directions opens the phone's maps app.</span></figcaption>
 <div class="phone"><div class="scr">
   <svg viewBox="0 0 390 844" width="390" height="844" style="position:absolute;inset:0" aria-hidden="true">
     <rect width="390" height="844" fill="#E9EEF2"/>
@@ -1230,7 +1230,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-a11y">
-<figcaption><b><em>3.9</em>Vault · largest text size</b><span>3.1 at 200% system text. One column, labels wrap instead of truncating, amounts are never cut, and every tap target stays at least 48 px. The page scrolls; nothing overlaps. The spec also requires 4.5:1 text contrast, a spoken label and state on every control, status in words as well as colour, reduced motion respected, and reading order that mirrors in Arabic.</span></figcaption>
+<figcaption><b><em>3.9</em>Vault · largest text size</b><span>3.1 at 200% text size: one column, wrapped labels, full amounts and tap targets of at least 48 px. The full requirements are in the accessibility spec in section 0.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar" style="height:52px">
@@ -1267,11 +1267,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-results">
 <h2>4 · Results</h2>
-<p>Today's Test Results screen, kept as it is: the same chips, "Whose results?", month groups, order cards, PDF download, AI summary and capability-aware gauge. Two additions from the brief: the lab's logo next to each result, and a Test reminders section for upcoming and recurring tests. Results arrive automatically from every connected lab. A member whose lab isn't connected yet adds results themselves, and the same list shows both.</p>
+<p>The current Test Results screen, with two additions: each lab's logo, and Test reminders. Results arrive automatically from connected labs; members add the rest themselves, and one list shows both.</p>
 <div class="board">
 
 <figure class="shot" id="s-results">
-<figcaption><b><em>4.1</em>Results</b><span>Today's Test Results screen, unchanged in structure: category chips, "Whose results?", orders grouped by month, status on each card. New: the lab's logo beside every result, and Test reminders as the tab's second half.</span></figcaption>
+<figcaption><b><em>4.1</em>Results</b><span>Same structure as the current screen: chips, "Whose results?" and orders by month. Each result now carries its lab's logo.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"></div>
@@ -1300,7 +1300,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-result">
-<figcaption><b><em>4.2</em>Result · one order</b><span>Same as an expanded order today: Download PDF, Summarize by AI where the lab allows it, and the Low / Normal / High gauge, drawn only when the lab supplied a range or a flag.</span></figcaption>
+<figcaption><b><em>4.2</em>Result · one order</b><span>PDF download and AI summary where the lab allows it. The Low / Normal / High gauge appears only when the lab supplied a range or flag.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-results" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1;font-size:18px">Complete blood count</h2><a class="icobtn" href="#s-record-view" aria-label="Share"><i data-i="share" data-s="18"></i></a></div>
@@ -1321,7 +1321,7 @@ html{scroll-behavior:smooth}
     <div class="tm">DIABETES</div>
     <div class="gcard" style="border-color:rgba(220,38,38,.35)"><div class="gh"><b>HbA1c</b><span><b style="color:#B91C1C">6.9</b> % <span class="pill bad" style="margin-left:4px">H</span></span></div><div class="gauge"><i></i><i></i><i></i><u style="left:80%"></u></div><div class="gl"><span>Low</span><span>4 – 5.6</span><span>High</span></div></div>
     <div style="display:flex;gap:10px;margin-top:10px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid var(--border)">
-      <i data-i="info" data-s="16" class="ic" style="margin-top:1px"></i><p style="margin:0;font-size:11.5px;line-height:1.45;color:var(--muted)">Ranges and flags are the lab's own. Where a lab gives none, the value is shown as measured and nothing is called normal.</p>
+      <i data-i="info" data-s="16" class="ic" style="margin-top:1px"></i><p style="margin:0;font-size:11.5px;line-height:1.45;color:var(--muted)">Ranges and flags come from the lab. Where a lab gives none, only the measured value is shown.</p>
     </div>
   </div>
   <nav class="nav" data-active="results"></nav>
@@ -1329,7 +1329,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-record-view">
-<figcaption><b><em>4.3</em>Result · share securely</b><span>A link that expires, never a public file. Safe settings are the defaults: 72 hours, a 6-digit code the member passes on separately (the link alone opens nothing), no download, and this one result only. Every opening is logged in Shared links (4.7).</span></figcaption>
+<figcaption><b><em>4.3</em>Result · share securely</b><span>Sharing creates an expiring link. Defaults are 72 hours, a 6-digit code passed on separately, and no download. Each opening is logged (4.7).</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-result" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1;font-size:18px">Complete blood count</h2><span class="icobtn" aria-hidden="true"><i data-i="more" data-s="18" data-w="2.6"></i></span></div>
@@ -1368,7 +1368,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-record-add">
-<figcaption><b><em>4.4</em>Add a result</b><span>For results from a lab that is not connected yet. Photo, scan or file, then a few details so it can be found later. Nothing is read or interpreted: the file is stored as uploaded, and shows in Results as "Added by you".</span></figcaption>
+<figcaption><b><em>4.4</em>Add a result</b><span>For labs that aren't connected yet. The file is stored as uploaded, without interpretation, and appears in Results as "Added by you".</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-results" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Add a result</h2></div>
@@ -1396,7 +1396,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-test-reminders">
-<figcaption><b><em>4.5</em>Test reminders</b><span>The second half of the Results tab. One-off and recurring tests for the whole family, overdue first. A reminder can come from the member, from a doctor's request, or from a result that the lab asks to repeat.</span></figcaption>
+<figcaption><b><em>4.5</em>Test reminders</b><span>One-off and recurring tests for the family, overdue first. Reminders come from the member, a doctor's request, or a result the lab asks to repeat.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"></div>
@@ -1421,7 +1421,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-test-reminder-add">
-<figcaption><b><em>4.6</em>Add test reminder</b><span>Who, which test, how often and when it's next due. Reminders are local notifications, like medication reminders, so they fire with no signal.</span></figcaption>
+<figcaption><b><em>4.6</em>Add test reminder</b><span>Who, which test, how often and when. Reminders are local notifications, so they work without a signal.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-test-reminders" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Test reminder</h2></div>
@@ -1447,7 +1447,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-share-links">
-<figcaption><b><em>4.7</em>Shared links</b><span>Every link the member has made, in one place, opened from the share sheet and from More › Privacy. Each open is listed: when, which browser and roughly where. Stop sharing works at once, even mid-view. Expired links stay collapsed, for the record.</span></figcaption>
+<figcaption><b><em>4.7</em>Shared links</b><span>All shared links, with each opening listed by time, browser and approximate location. Stop sharing takes effect immediately.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-record-view" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Shared links</h2></div>
@@ -1477,7 +1477,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-share-code">
-<figcaption><b><em>4.8</em>Doctor's browser · code first</b><span>The link alone shows only who shared it and when it expires, with no health data. The doctor enters the 6-digit code from the patient and their own name for the log. After 5 wrong codes the link locks and the member is told; they can make a new one.</span></figcaption>
+<figcaption><b><em>4.8</em>Doctor's browser · code first</b><span>Without the code, the link shows only who shared it and the expiry. Five wrong codes lock the link and alert the member.</span></figcaption>
 <div class="phone"><div class="scr white">
   <div style="padding:52px 16px 10px;background:#F3F4F6;border-bottom:1px solid #E5E7EB;flex:none"><div style="background:#fff;border-radius:10px;height:34px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#374151"><i data-i="lock" data-s="12" data-w="2.2"></i>medvault.app</div></div>
   <div class="main wide" style="padding-top:28px">
@@ -1509,11 +1509,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-insurance">
 <h2>5 · Insurance</h2>
-<p>Everything the brief lists for insurance, under one tab: the digital card with eligibility and active coverage, the policy, the Table of Benefits with limits, exclusions and co-pays, the covered provider network, claims, pre-approvals and payments. Balances always show when they were read from the insurer.</p>
+<p>Card, eligibility, policy, Table of Benefits, provider network, claims, pre-approvals, payments and booking, in one tab. Every balance shows when it was last read from the insurer.</p>
 <div class="board">
 
 <figure class="shot" id="s-ins">
-<figcaption><b><em>5.1</em>Insurance</b><span>The tab's front page: the card, today's eligibility and the policy at a glance, then one tile for each part of the brief: benefits, network, claims, pre-approvals and payments.</span></figcaption>
+<figcaption><b><em>5.1</em>Insurance</b><span>Card, today's eligibility and the policy at a glance, with a tile for each insurance service below.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"><div class="spacer"></div><a class="icobtn" href="#s-card" aria-label="Share card"><i data-i="share" data-s="18"></i></a></div>
@@ -1549,7 +1549,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-ins-soon">
-<figcaption><b><em>5.2</em>Insurance · insurer not connected yet</b><span>Same tab, same layout. The member linked a reference number from an insurer that isn't a partner yet, so each feature waits under a Coming soon tag instead of the tab disappearing. The network stays live.</span></figcaption>
+<figcaption><b><em>5.2</em>Insurance · insurer not connected yet</b><span>The member's insurer isn't a partner yet. The layout stays the same, with features tagged Coming soon. The network stays open.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"></div>
@@ -1578,7 +1578,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-card">
-<figcaption><b><em>5.3</em>Digital card</b><span>Styled after today's VMC card. The QR is now a signed code that changes every minute, so a screenshot or forwarded image stops working within minutes. Providers scan it with the provider portal (5.25) and see eligibility only. With no signal, the card shows a code made at the last sync, valid for 24 hours, and says so.</span></figcaption>
+<figcaption><b><em>5.3</em>Digital card</b><span>The QR code refreshes every minute, so screenshots soon expire. Providers verify it in the portal (5.25). Offline, a 24-hour code is shown.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">My card</h2><a class="icobtn" href="#s-card" aria-label="Share card"><i data-i="share" data-s="18"></i></a></div>
@@ -1628,7 +1628,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-member-card">
-<figcaption><b><em>5.4</em>Sara's card</b><span>The same card, under Sara's own member number. Her results and medications are one tap away from it.</span></figcaption>
+<figcaption><b><em>5.4</em>Sara's card</b><span>Sara's card under her own member number, with her results and medications one tap away.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-family" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Sara's card</h2><a class="icobtn" href="#s-member-card" aria-label="Share card"><i data-i="share" data-s="18"></i></a></div>
@@ -1666,7 +1666,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-benefits">
-<figcaption><b><em>5.5</em>Table of benefits · benefits and limits</b><span>The TOB from the insurer, now led by the overall annual limit and whether it is shared by the family or per person. "Used" means paid plus approved; claims still under review are shown apart as pending, never subtracted twice. A waiting period is its own state, not a zero balance. Data model: section 0.</span></figcaption>
+<figcaption><b><em>5.5</em>Table of benefits · benefits and limits</b><span>Led by the overall annual limit and who shares it. Claims under review show separately as pending. Waiting periods have their own state.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Table of benefits</h2></div>
@@ -1704,7 +1704,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-benefit">
-<figcaption><b><em>5.6</em>Benefit detail</b><span>The rules for one benefit in plain words: when approval is needed and what happens outside the network.</span></figcaption>
+<figcaption><b><em>5.6</em>Benefit detail</b><span>One benefit's rules: when approval is needed and how care outside the network works.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-benefits" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Labs and imaging</h2></div>
@@ -1736,7 +1736,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-exclusions">
-<figcaption><b><em>5.7</em>Table of benefits · exclusions and what you pay</b><span>The second half of the TOB: what the plan never covers, and the member's own share for each kind of care, in one place. Taken from the insurer's plan data, with the policy document one tap away.</span></figcaption>
+<figcaption><b><em>5.7</em>Table of benefits · exclusions and what you pay</b><span>The member's share for each kind of care, and what the plan excludes. The full policy document is one tap away.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Table of benefits</h2></div>
@@ -1763,7 +1763,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-providers">
-<figcaption><b><em>5.8</em>Provider network</b><span>Everything the plan covers, by type: hospitals, labs, radiology centres, doctors and pharmacies. Each provider says how it is paid: direct billing, approval first, or pay and claim.</span></figcaption>
+<figcaption><b><em>5.8</em>Provider network</b><span>Covered providers by type. Each shows how it is paid: direct billing, approval first, or pay and claim.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Provider network</h2></div>
@@ -1785,7 +1785,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-provider">
-<figcaption><b><em>5.9</em>Provider detail</b><span>Lab detail, adapted: the same tiles and contact card, plus Book for providers that take appointments, and what the member's plan covers at this provider. Book opens the request-and-confirm flow (5.26 to 5.28).</span></figcaption>
+<figcaption><b><em>5.9</em>Provider detail</b><span>The current lab detail, plus what the plan covers here. Book starts a booking request (5.26).</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-providers" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><img class="wm" src="images/logotext.png" alt="MedVault"></div>
@@ -1816,7 +1816,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-claims">
-<figcaption><b><em>5.10</em>Claims</b><span>Submitted claims and their history. The card colour follows status, and every status also has its own word and icon. A claim started and not sent is kept as a draft at the top. A partly approved claim says so and opens the line-by-line decision (5.20). Pre-approvals have their own list.</span></figcaption>
+<figcaption><b><em>5.10</em>Claims</b><span>Claims by status, with drafts at the top. Each status has a label as well as a colour. Partly approved claims open the full decision (5.20).</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Claims</h2></div>
@@ -1846,7 +1846,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-claim">
-<figcaption><b><em>5.11</em>Claim detail · info needed</b><span>The one thing the member must do sits at the top. The payout is labelled as an estimate until the claim is decided.</span></figcaption>
+<figcaption><b><em>5.11</em>Claim detail · info needed</b><span>The required action sits at the top. The payout stays an estimate until the claim is decided.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-claims" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">CL-2307</h2><span class="pill warn">Info needed</span></div>
@@ -1875,7 +1875,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-newclaim">
-<figcaption><b><em>5.12</em>New claim · details</b><span>Starts from what MedVault already knows. A payment, booking or result from the last 30 days fills in provider, person, date and amount in one tap. Otherwise the provider autocompletes from the network. The claim saves as a draft as the member types. Reading an invoice photo comes in Phase 2.</span></figcaption>
+<figcaption><b><em>5.12</em>New claim · details</b><span>A recent payment, booking or result fills in the claim in one tap. Drafts save automatically. Invoice scanning comes in Phase 2.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-claims" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">New claim</h2><span class="pill mute" style="margin-right:6px"><i data-i="check" data-s="11" data-w="3"></i>Draft saved</span><span class="cap">1 of 2</span></div>
@@ -1908,7 +1908,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-docs">
-<figcaption><b><em>5.13</em>New claim · documents</b><span>The insurer's checklist for "Lab tests". A required document MedVault already holds is offered first. Here it's the lab report for this visit, from Results, so nothing is photographed twice. The draft can be left and finished later from Claims.</span></figcaption>
+<figcaption><b><em>5.13</em>New claim · documents</b><span>The insurer's checklist for this claim type. Documents already in MedVault, such as this lab report, are offered first.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-newclaim" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Documents</h2><span class="cap">2 of 2</span></div>
@@ -1936,7 +1936,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-sent">
-<figcaption><b><em>5.14</em>Claim sent</b><span>A reference number, what happens next, and a notification on every status change.</span></figcaption>
+<figcaption><b><em>5.14</em>Claim sent</b><span>A reference number and what happens next. Every status change sends a notification.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:96px">
     <div class="state">
@@ -1964,7 +1964,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-preauth">
-<figcaption><b><em>5.15</em>Pre-approvals</b><span>Every approval request for the family, whoever sent it: the hospital, the doctor or the member. An approval shows what it allows and until when; a refusal says why and links to the rule.</span></figcaption>
+<figcaption><b><em>5.15</em>Pre-approvals</b><span>All approval requests for the family. Approvals show what they cover and until when. Refusals give the reason and link to the rule.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Pre-approvals</h2></div>
@@ -1995,7 +1995,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-preauth-new">
-<figcaption><b><em>5.16</em>Request pre-approval<span class="ph p2">Phase 2</span></b><span>For when the member has the doctor's request in hand. The provider is copied on the decision, so nobody has to forward it.</span></figcaption>
+<figcaption><b><em>5.16</em>Request pre-approval<span class="ph p2">Phase 2</span></b><span>For members holding a doctor's request. The provider receives the decision directly.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-preauth" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Request pre-approval</h2></div>
@@ -2018,7 +2018,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-payments">
-<figcaption><b><em>5.17</em>Payments</b><span>What the member owes and has paid, now with every state in view. Bank transfers and branch payments sit under Pending until the money arrives, and a failed payment stays in the list with Retry instead of quietly disappearing. Payouts on claims are listed with the claim, not here.</span></figcaption>
+<figcaption><b><em>5.17</em>Payments</b><span>What's due, pending and paid. Bank and branch payments stay pending until received. Failed payments keep a Retry button.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Payments</h2></div>
@@ -2045,7 +2045,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-pay">
-<figcaption><b><em>5.18</em>Pay</b><span>One sheet for every payment. The methods shown are examples: the real list is whatever the chosen gateway supports. A receipt is saved with the payment and sent by notification.</span></figcaption>
+<figcaption><b><em>5.18</em>Pay</b><span>One payment sheet throughout the app. Methods shown are examples until a gateway is chosen. Receipts are saved automatically.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-payments" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Payments</h2></div>
@@ -2069,7 +2069,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-attach">
-<figcaption><b><em>5.19</em>Add from MedVault</b><span>Opened from any document slot in a claim, a dispute or a message. It is already filtered to the claim's person and to the 30 days around the visit, so the right file is usually on top. Several can be picked at once. Files attached this way are copies; the original stays where it was.</span></figcaption>
+<figcaption><b><em>5.19</em>Add from MedVault</b><span>Attach files already in MedVault, filtered to the patient and the dates around the visit. Several can be selected at once.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-newclaim" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Documents</h2><span class="cap">2 of 2</span></div>
@@ -2102,7 +2102,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-claim-partial">
-<figcaption><b><em>5.20</em>Claim decided · partly approved</b><span>A decision is shown line by line: what was claimed, what was approved and, for every line that changed, the reason in plain words. The co-pay is shown as its own step, so the member can see why the payout is lower. Two ways forward: question the decision, or message [TPA].</span></figcaption>
+<figcaption><b><em>5.20</em>Claim decided · partly approved</b><span>Each line shows claimed and approved amounts, with a reason for any change. The co-pay is listed separately to explain the payout.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-claims" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">CL-2291</h2><span class="pill warn">Partly approved</span></div>
@@ -2127,7 +2127,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-dispute">
-<figcaption><b><em>5.21</em>Question a decision</b><span>The member picks the lines they disagree with and gives a reason in one tap. Evidence comes from MedVault or the camera. The deadline is the insurer's: the 30 days shown is a placeholder until it's confirmed. The claim's timeline then shows the review as its own step.</span></figcaption>
+<figcaption><b><em>5.21</em>Question a decision</b><span>Select the disputed lines, choose a reason and add evidence. The 30-day deadline is a placeholder until the insurer confirms it.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-claim-partial" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Question a decision</h2></div>
@@ -2156,7 +2156,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-claim-thread">
-<figcaption><b><em>5.22</em>Claim conversation</b><span>One thread per claim, with [TPA]'s replies and claim events in time order. The banner states the reply time and when a reply is due. Escalate appears only once a reply is overdue, as it is here (one day late). It goes to [Insurer name]'s member team, with the thread attached.</span></figcaption>
+<figcaption><b><em>5.22</em>Claim conversation</b><span>A message thread for each claim, showing when a reply is due. Once overdue, Escalate sends the thread to [Insurer name]'s member team.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="appbar" style="padding:56px 20px 10px;height:auto;border-bottom:1px solid rgba(158,158,158,.15);flex:none">
     <a class="back" href="#s-claim" aria-label="Back"><i data-i="back" data-w="2.4"></i></a>
@@ -2180,7 +2180,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-pay-pending">
-<figcaption><b><em>5.23</em>Payment pending · bank transfer or branch</b><span>Offline payments are pending by nature, so the screen says exactly what to do and what happens meanwhile: the reference to quote, where to pay, the deadline, and what the delay means for cover. MedVault notifies when the money arrives, and again 2 days before the deadline if it hasn't.</span></figcaption>
+<figcaption><b><em>5.23</em>Payment pending · bank transfer or branch</b><span>Shows the reference, where to pay, the deadline and the effect on cover. Members are notified on receipt, or 2 days before the deadline.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-payments" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Payment pending</h2></div>
@@ -2210,7 +2210,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-pay-failed">
-<figcaption><b><em>5.24</em>Payment didn't go through</b><span>The gateway's reason in plain words, and the reassurance members need first: nothing was charged. Retry keeps the same method; another method reopens the pay sheet. While a payment is processing, the sheet shows a Processing pill and the member can leave: the result arrives as a notification, so nobody pays twice.</span></figcaption>
+<figcaption><b><em>5.24</em>Payment didn't go through</b><span>Leads with the reason and confirms no charge was made. Members can retry or switch method. Processing payments notify on completion.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:92px">
     <div class="state">
@@ -2237,7 +2237,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-verify">
-<figcaption><b><em>5.25</em>Provider verifier</b><span>What reception sees after scanning the card, in the provider portal. Only a signed-in provider can check a code, and every check is logged with who and where. The answer is eligibility and what to charge: no results, no diagnoses, no claims history. An expired or copied code shows "Code expired · ask the member to refresh their card" and nothing else.</span></figcaption>
+<figcaption><b><em>5.25</em>Provider verifier</b><span>What reception sees after scanning. Signed-in providers only, every check logged. It shows eligibility and co-pay, with no health data.</span></figcaption>
 <div class="phone"><div class="scr white">
   <div style="padding:52px 16px 10px;background:#F3F4F6;border-bottom:1px solid #E5E7EB;flex:none"><div style="background:#fff;border-radius:10px;height:34px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#374151"><i data-i="lock" data-s="12" data-w="2.2"></i>providers.medvault.app</div></div>
   <div class="main" style="padding-top:14px">
@@ -2269,7 +2269,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-book">
-<figcaption><b><em>5.26</em>Book · request a visit</b><span>Opened from Book on 5.9 and from the Vault banner. Phase 1 is request-and-confirm: the member says who, what and roughly when, and the provider confirms a time. Live slots arrive in Phase 2<span class="ph p2">Phase 2</span>, once provider schedules are integrated. Prices and the member's share come from the plan.</span></figcaption>
+<figcaption><b><em>5.26</em>Book · request a visit</b><span>The member requests a service and preferred time, and the provider confirms. Live slots follow in Phase 2<span class="ph p2">Phase 2</span>. Prices come from the plan.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-provider" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1;font-size:18px">Book at Sample Medical Lab</h2></div>
@@ -2310,7 +2310,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-book-sent">
-<figcaption><b><em>5.27</em>Book · request sent</b><span>Says plainly that this is a request, not a booking, and how long the answer usually takes. If the lab doesn't answer in time, MedVault chases it, and after 24 hours the member can cancel or choose another lab. The request shows in Coming up on Vault straight away, marked as waiting.</span></figcaption>
+<figcaption><b><em>5.27</em>Book · request sent</b><span>Shows the request and the usual response time. After 24 hours without an answer, the member can cancel or choose another lab.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:64px">
     <div class="state">
@@ -2339,7 +2339,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-book-confirmed">
-<figcaption><b><em>5.28</em>Book · lab answered</b><span>The lab either confirms one of the member's choices or offers another time, as here. A counter-offer needs one tap: Accept, Ask for another time, or Cancel. A plain confirmation shows the same card with a green Confirmed tag and no question. Medication-style reminders, including the fasting one the evening before, are created only once a time is agreed.</span></figcaption>
+<figcaption><b><em>5.28</em>Book · lab answered</b><span>Here the lab proposes a new time. Accepting confirms the booking and sets reminders, including fasting the evening before.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-home" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">BK-4410</h2><span class="pill warn">New time offered</span></div>
@@ -2377,11 +2377,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-renew">
 <h2>6 · Renewing the policy</h2>
-<p>Part of the Insurance tab. Renewal opens 30 days before the policy ends. Members with an individual or family policy renew in the app: they pick a plan, the co-pay and who is covered, then pay through the same payment sheet as everything else. An employer policy is renewed by HR, so its members get a status screen with no actions.</p>
+<p>Renewal opens 30 days before the policy ends. Individual and family policies renew in the app: plan, co-pay, members, then payment. Employer policies are renewed by HR, so those members see status only.</p>
 <div class="board">
 
 <figure class="shot" id="s-renew-home">
-<figcaption><b><em>6.1</em>Insurance · renewal open</b><span>A banner at the top of the Insurance tab from 30 days before the end date, mirrored as a reminder on Vault. It stays until the policy is renewed or ends.</span></figcaption>
+<figcaption><b><em>6.1</em>Insurance · renewal open</b><span>A renewal banner appears 30 days before the end date, with a matching reminder on Vault.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"><div class="spacer"></div><a class="icobtn" href="#s-card" aria-label="Share card"><i data-i="share" data-s="18"></i></a></div>
@@ -2420,7 +2420,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-renew">
-<figcaption><b><em>6.2</em>Choose your plan</b><span>Next year's plans side by side, the current one marked. Co-pay can only change at renewal, so it is chosen here, and the price updates with it.</span></figcaption>
+<figcaption><b><em>6.2</em>Choose your plan</b><span>Next year's plans side by side. Co-pay can only change at renewal, and the price updates as it is chosen.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-renew-home" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Renew for 2027</h2><span class="cap">1 of 3</span></div>
@@ -2460,7 +2460,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-renew-members">
-<figcaption><b><em>6.3</em>Who's covered</b><span>Everyone on this year's policy is pre-selected and the principal can't be removed. A new member is checked by the insurer before the price is final.</span></figcaption>
+<figcaption><b><em>6.3</em>Who's covered</b><span>Current members are pre-selected. New members are checked by the insurer before the price is confirmed.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-renew" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Who's covered</h2><span class="cap">2 of 3</span></div>
@@ -2485,7 +2485,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-renew-pay">
-<figcaption><b><em>6.4</em>Review and pay</b><span>Everything that was chosen, the total in IQD and the payment methods the insurer accepts. Nothing is charged before the terms are accepted.</span></figcaption>
+<figcaption><b><em>6.4</em>Review and pay</b><span>A summary of choices and the total. Payment is taken only after the terms are accepted.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-renew-members" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Review and pay</h2><span class="cap">3 of 3</span></div>
@@ -2518,7 +2518,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-renewed">
-<figcaption><b><em>6.5</em>Renewed</b><span>The new card is ready straight away and takes effect on 1 January. The policy document and receipt stay in Insurance › Payments.</span></figcaption>
+<figcaption><b><em>6.5</em>Renewed</b><span>The new card is available at once and takes effect on 1 January. Documents are kept in Insurance › Payments.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:92px">
     <div class="state">
@@ -2548,7 +2548,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-renew-group">
-<figcaption><b><em>6.6</em>Employer policy</b><span>For group cover. The member can't renew it, so the screen says who does, what to expect, and when to ask HR.</span></figcaption>
+<figcaption><b><em>6.6</em>Employer policy</b><span>Group cover is renewed by the employer. This screen explains the timeline and when to contact HR.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Renewal</h2></div>
@@ -2579,11 +2579,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-health">
 <h2>7 · Health</h2>
-<p>The brief's four Health sections, as tabs across the top: <b>Sensors</b>, <b>Health figures</b>, <b>Medications</b> and <b>Prescriptions</b>. Readings come through the phone's health store: Apple Health on iPhone and Health Connect on Android. Every figure names its source. MedVault shows and shares readings; it doesn't diagnose, and <b>the insurer never sees any of it</b>.</p>
+<p>Four tabs: <b>Sensors</b>, <b>Health figures</b>, <b>Medications</b> and <b>Prescriptions</b>. Readings come from Apple Health or Health Connect, each with its source. MedVault doesn't diagnose, and <b>the insurer never sees any of it</b>.</p>
 <div class="board">
 
 <figure class="shot" id="s-sensors">
-<figcaption><b><em>7.1</em>Health · Sensors</b><span>Everything feeding Health figures, with when each last synced. Phase 1 reads through the phone's health store, which already carries most watches and cuffs. Devices that need their own connection come later, one by one.</span></figcaption>
+<figcaption><b><em>7.1</em>Health · Sensors</b><span>Every source feeding Health figures, with its last sync. Phase 1 reads the phone's health store, which already covers most watches and cuffs.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <h2 class="h2" style="margin-top:6px">My health</h2>
@@ -2613,7 +2613,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-connect-ios">
-<figcaption><b><em>7.2</em>Connect · iPhone</b><span>Apple Health is the only source on iPhone. It brings in Apple Watch and any app that saves to it, such as a blood pressure cuff. The member picks each reading, then iOS asks for permission.</span></figcaption>
+<figcaption><b><em>7.2</em>Connect · iPhone</b><span>On iPhone, everything comes through Apple Health, including Apple Watch and cuff apps. The member picks each reading before iOS asks for permission.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-sensors" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Connect a device</h2></div>
@@ -2647,7 +2647,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-connect-android">
-<figcaption><b><em>7.3</em>Connect · Android</b><span>The same screen on Android, through Health Connect. Each brand's own app (Samsung Health, Fitbit and so on) shares into Health Connect, and MedVault reads from there.</span></figcaption>
+<figcaption><b><em>7.3</em>Connect · Android</b><span>The Android version, through Health Connect. Brand apps such as Samsung Health and Fitbit share into it, and MedVault reads from there.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-sensors" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Connect a device</h2></div>
@@ -2676,7 +2676,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-vitals">
-<figcaption><b><em>7.4</em>Health · Health figures<span class="ph p3">AI summary · Phase 3</span></b><span>Every measurement names its source and when it was taken. The AI summary sits on top, says which readings it used, and only describes them; it never diagnoses.</span></figcaption>
+<figcaption><b><em>7.4</em>Health · Health figures<span class="ph p3">AI summary · Phase 3</span></b><span>Each reading shows its source and time. The AI summary on top lists the readings it used and describes them without diagnosing.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <h2 class="h2" style="margin-top:6px">My health</h2>
@@ -2709,7 +2709,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-hr">
-<figcaption><b><em>7.5</em>Heart rate · 7 days</b><span>Daily lowest to highest, with the resting rate as a line. Alerts and ECG results appear exactly as the watch recorded them, credited to the watch.</span></figcaption>
+<figcaption><b><em>7.5</em>Heart rate · 7 days</b><span>Daily range with the resting rate as a line. Alerts and ECG results appear as the watch recorded them, credited to the watch.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-vitals" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Heart rate</h2></div>
@@ -2743,7 +2743,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-meds">
-<figcaption><b><em>7.6</em>Health · Medications</b><span>Today's doses for the whole family, by time. A dose is ticked off from the list or from the reminder. Refills get a warning before they run out.</span></figcaption>
+<figcaption><b><em>7.6</em>Health · Medications</b><span>The family's doses for the day, by time. Doses are ticked off here or from the reminder, and refills get an early warning.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <h2 class="h2" style="margin-top:6px">My health</h2>
@@ -2768,7 +2768,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-med-add">
-<figcaption><b><em>7.7</em>Add medication</b><span>Typed in by the member, for themselves or a family member. Reminders are local notifications, so they still fire with no signal. The app reminds; it does not check doses or interactions.</span></figcaption>
+<figcaption><b><em>7.7</em>Add medication</b><span>Entered by the member for anyone in the family. Reminders fire without signal. The app doesn't check doses or interactions.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-meds" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Add medication</h2></div>
@@ -2798,7 +2798,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-reminder">
-<figcaption><b><em>7.8</em>Reminder</b><span>A notification on the lock screen with Taken and Snooze, so nobody has to open the app. Medicine names are hidden on the lock screen unless the member turns them on. In v4 the same rule covers every type: results, claims, approvals and payments (8.8).</span></figcaption>
+<figcaption><b><em>7.8</em>Reminder</b><span>Taken and Snooze work from the lock screen. Medicine names stay hidden there unless the member turns them on, as for every notification type (8.8).</span></figcaption>
 <div class="phone"><div class="scr" style="background:linear-gradient(170deg,#1D2E63 0%,#0D1B4B 55%,#0A1433 100%);color:#fff">
   <div class="main" style="align-items:center;padding-top:90px">
     <div style="font-size:15px;opacity:.85">Wednesday 7 October</div>
@@ -2821,7 +2821,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-rx">
-<figcaption><b><em>7.9</em>Health · Prescriptions</b><span>Every prescription for the family, as uploaded. One can turn its medicines into reminders, or be attached to a claim that asks for it, which is how Sara's claim gets unstuck.</span></figcaption>
+<figcaption><b><em>7.9</em>Health · Prescriptions</b><span>The family's prescriptions as uploaded. Each can create medicine reminders or be attached to a claim, which is how Sara's claim moves forward.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <h2 class="h2" style="margin-top:6px">My health</h2>
@@ -2843,7 +2843,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-rx-add">
-<figcaption><b><em>7.10</em>Add prescription</b><span>Photo, scan or file, then the medicines on it, typed by the member. Each one can become a medication with reminders in the same step. Nothing is read from the image in Phase 1.</span></figcaption>
+<figcaption><b><em>7.10</em>Add prescription</b><span>Photo, scan or file, then the medicines typed by the member, each optionally added with reminders. Phase 1 doesn't read text from the image.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-rx" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Add prescription</h2></div>
@@ -2871,7 +2871,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-report-new">
-<figcaption><b><em>7.11</em>Create a report</b><span>The member chooses the period and what goes in, including medications and recent lab results from the other Health sections, and can add a note for the doctor.</span></figcaption>
+<figcaption><b><em>7.11</em>Create a report</b><span>The member picks a period and what to include, such as medications and recent lab results, and can add a note for the doctor.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-vitals" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Report for a doctor</h2></div>
@@ -2902,7 +2902,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-report-share">
-<figcaption><b><em>7.12</em>Share the report</b><span>The same share sheet as results (4.3). The default is now 72 hours, not 14 days, with a code and no download. The report names the patient and their age only: no date of birth, no member number.</span></figcaption>
+<figcaption><b><em>7.12</em>Share the report</b><span>The same share sheet as results (4.3): 72-hour default, code on, download off. The report identifies the patient by name and age only.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-report-new" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Your report</h2></div>
@@ -2942,7 +2942,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-report-doctor">
-<figcaption><b><em>7.13</em>What the doctor sees</b><span>Opens in any browser after the code (4.8). The fewest details that still identify the patient: name and age, no date of birth and no member number. The doctor gives a name before viewing, and it goes into the member's access log.</span></figcaption>
+<figcaption><b><em>7.13</em>What the doctor sees</b><span>Opens in any browser once the code is entered (4.8). It shows name and age only, and the doctor's name is recorded in the member's access log.</span></figcaption>
 <div class="phone"><div class="scr white">
   <div style="padding:52px 16px 10px;background:#F3F4F6;border-bottom:1px solid #E5E7EB;flex:none"><div style="background:#fff;border-radius:10px;height:34px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#374151"><i data-i="lock" data-s="12" data-w="2.2"></i>medvault.app</div></div>
   <div class="main" style="padding-top:16px">
@@ -2972,11 +2972,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-more">
 <h2>8 · More</h2>
-<p>Secondary features: profile, family members, settings, language, support and account management. Every family member has their own card, results and reminders, and every tab can be filtered by person.</p>
+<p>Profile, family, settings, language, support and account. Each family member has their own card, results and reminders, and every tab can be filtered by person.</p>
 <div class="board">
 
 <figure class="shot" id="s-account">
-<figcaption><b><em>8.1</em>More</b><span>Today's Account screen, renamed and regrouped as the brief lists it: profile and family, settings and language, support, and account management. There is no country setting: everyone has the same app. New in v4: notification privacy (8.8), who sees your data (8.9), help with tiers (8.10), Emergency, and a designed delete flow (8.4).</span></figcaption>
+<figcaption><b><em>8.1</em>More</b><span>The current Account screen, regrouped into profile and family, settings, support and account. It now includes notification privacy, data access, help, Emergency and account deletion.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main" style="padding-top:58px">
     <a href="#s-account" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit">
@@ -3017,7 +3017,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-family">
-<figcaption><b><em>8.2</em>Family</b><span>Everyone the member looks after, reached from More. People on the policy appear by themselves. Others can be added with their own card, or with no insurance, for results and reminders only.</span></figcaption>
+<figcaption><b><em>8.2</em>Family</b><span>Everyone the member looks after. People on the policy appear automatically; others can be added with their own card or for results and reminders only.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-account" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Family</h2></div>
@@ -3056,7 +3056,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-family-add">
-<figcaption><b><em>8.3</em>Add family member</b><span>One form for every case. With a card, the number is checked with the insurer like the member's own link. An adult is sent a text to agree before their details are shared.</span></figcaption>
+<figcaption><b><em>8.3</em>Add family member</b><span>One form for every case. A card number is checked with the insurer, and adults confirm by text before their details are shared.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-family" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Add family member</h2></div>
@@ -3088,7 +3088,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-delete">
-<figcaption><b><em>8.4</em>Delete account</b><span>Says plainly what goes and what stays, and who keeps it. Claims and policy records belong to the insurer and the law decides how long they're kept, so the screen doesn't promise to erase them. Retention periods are placeholders until legal review. Download comes first, so nobody loses their results by accident.</span></figcaption>
+<figcaption><b><em>8.4</em>Delete account</b><span>Lists what is deleted and what the insurer keeps by law. Download comes first so results aren't lost. Retention periods await legal review.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-account" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Delete account</h2></div>
@@ -3119,7 +3119,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-delete-confirm">
-<figcaption><b><em>8.5</em>Confirm deletion</b><span>A code sent to the member's number, so a borrowed, unlocked phone can't delete the account. Face ID is offered instead where it's on. The last line says it can't be undone, and the button says exactly what it does.</span></figcaption>
+<figcaption><b><em>8.5</em>Confirm deletion</b><span>Confirmed with a code or Face ID, so an unlocked phone in someone else's hands can't delete the account.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-delete" aria-label="Back"><i data-i="back" data-w="2.4"></i></a></div>
@@ -3147,7 +3147,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-err-offline">
-<figcaption><b><em>8.6</em>No connection</b><span>The app-wide pattern for being offline, shown on Results. A thin banner, never a full-screen error: everything already on the phone stays readable with its age, and what needs a connection is greyed and says so. Losing signal never signs anyone out.</span></figcaption>
+<figcaption><b><em>8.6</em>No connection</b><span>The offline pattern, shown on Results. A slim banner, saved content stays readable with its age, and online-only actions are greyed with a reason.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><img class="wm" src="images/logotext.png" alt="MedVault"></div>
@@ -3179,7 +3179,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-err-server">
-<figcaption><b><em>8.7</em>Something went wrong</b><span>For one action that failed on our side or the insurer's, shown as a claim that didn't send. It says nothing was lost, keeps the draft, offers Try again, and gives a short reference so support can find the exact request without asking for screenshots.</span></figcaption>
+<figcaption><b><em>8.7</em>Something went wrong</b><span>A failed action, shown as a claim that didn't send. The draft is kept, Try again is offered, and a short reference helps support trace it.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide" style="padding-top:110px">
     <div class="state">
@@ -3204,7 +3204,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-notif-settings">
-<figcaption><b><em>8.8</em>Notifications and privacy</b><span>Each type can be turned off on its own. The lock-screen rule covers every type, not only medicines: results, claims, approvals and payments show as "a new update" until the phone is unlocked, and family members' names stay hidden unless the member turns them on.</span></figcaption>
+<figcaption><b><em>8.8</em>Notifications and privacy</b><span>Each type can be turned off separately. On the lock screen every type reads "a new update", and family names stay hidden unless the member allows them.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-account" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Notifications</h2></div>
@@ -3242,7 +3242,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-privacy">
-<figcaption><b><em>8.9</em>Your data and who sees it</b><span>The separation between MedVault and the insurer, stated where the member can check it. The insurer and TPA get only what the member sends them; health data never goes to them unless the member attaches it to a claim. Every link out has an access history and can be stopped.</span></figcaption>
+<figcaption><b><em>8.9</em>Your data and who sees it</b><span>What the insurer and TPA can see: only what the member sends them. Health data stays with MedVault, and every shared link can be traced and stopped.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-account" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Your data</h2></div>
@@ -3276,7 +3276,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-help">
-<figcaption><b><em>8.10</em>Help and support</b><span>Support in tiers, cheapest first: articles, then chat with MedVault, then the insurer for cover decisions, then escalation when an open case misses its reply time. Reply times are live, not static text, and each open case shows whether it's on time.</span></figcaption>
+<figcaption><b><em>8.10</em>Help and support</b><span>Help articles, MedVault chat, the insurer for cover questions, and escalation when a case runs late. Reply times are live and each case shows its status.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-account" aria-label="Back"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">Help and support</h2></div>
@@ -3306,11 +3306,11 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f-ai">
 <h2>9 · Ask MedVault, the AI assistant</h2>
-<p><span class="ph p3" style="margin:0 0 8px;display:inline-flex">Phase 3</span><br>The brief places AI-supported assistance in Phase 3. A floating button on Vault and the provider network opens a chat about the member's own cover, claims, results and medicines. It answers from the member's data through our server, shows where each answer came from, and offers the next step as a button. It explains; it doesn't diagnose. It can be switched off per insurer, and the insurer never reads the chats.</p>
+<p><span class="ph p3" style="margin:0 0 8px;display:inline-flex">Phase 3</span><br>A chat about the member's own cover, claims, results and medicines, opened from Vault and the provider network. Answers cite their sources and suggest a next step. It doesn't diagnose, can be switched off per insurer, and the insurer never reads the chats.</p>
 <div class="board">
 
 <figure class="shot" id="s-ai">
-<figcaption><b><em>9.1</em>Assistant · start<span class="ph p3">Phase 3</span></b><span>Opened from the floating button. The suggestions are built from the member's own account: an open claim, a pending approval, a recent result.</span></figcaption>
+<figcaption><b><em>9.1</em>Assistant · start<span class="ph p3">Phase 3</span></b><span>Opened from the floating button, with suggestions drawn from the member's open claims, approvals and recent results.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-home" aria-label="Close"><i data-i="x" data-w="2.2"></i></a><div class="spacer"></div><span class="icobtn" aria-hidden="true"><i data-i="clock" data-s="18"></i></span></div>
@@ -3334,7 +3334,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-ai-cover">
-<figcaption><b><em>9.2</em>Assistant · a cover question<span class="ph p3">Phase 3</span></b><span>The answer uses the member's real plan, balance and open approvals. It names its sources and ends with buttons for the next step, never a dead end.</span></figcaption>
+<figcaption><b><em>9.2</em>Assistant · a cover question<span class="ph p3">Phase 3</span></b><span>Answers use the member's plan, balance and approvals, cite their sources and end with a next step.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="appbar" style="padding:56px 20px 10px;height:auto;border-bottom:1px solid rgba(158,158,158,.15);flex:none">
     <a class="back" href="#s-ai" aria-label="Back"><i data-i="back" data-w="2.4"></i></a>
@@ -3360,7 +3360,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-ai-result">
-<figcaption><b><em>9.3</em>Assistant · explaining a result<span class="ph p3">Phase 3</span></b><span>Values are compared only with the ranges the lab printed, under the same rules as today's AI Summary. Where a lab gives no range, it says so and calls nothing normal.</span></figcaption>
+<figcaption><b><em>9.3</em>Assistant · explaining a result<span class="ph p3">Phase 3</span></b><span>Values are compared only with the lab's printed ranges. Without a range, the assistant says so and calls nothing normal.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="appbar" style="padding:56px 20px 10px;height:auto;border-bottom:1px solid rgba(158,158,158,.15);flex:none">
     <a class="back" href="#s-ai" aria-label="Back"><i data-i="back" data-w="2.4"></i></a>
@@ -3391,7 +3391,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-ai-ar">
-<figcaption><b><em>9.4</em>Assistant · Arabic, by voice<span class="ph p3">Phase 3</span></b><span>Many members will ask in Arabic, often by voice. The question is recorded with the mic, turned into text the member can check, and answered in Arabic.</span></figcaption>
+<figcaption><b><em>9.4</em>Assistant · Arabic, by voice<span class="ph p3">Phase 3</span></b><span>Questions asked by voice in Arabic are transcribed for the member to check, then answered in Arabic.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="appbar" style="padding:56px 20px 10px;height:auto;border-bottom:1px solid rgba(158,158,158,.15);flex:none">
     <a class="back" href="#s-home-ar" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a>
@@ -3420,7 +3420,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-ai-consent">
-<figcaption><b><em>9.5</em>Assistant · before first use<span class="ph p3">Phase 3</span></b><span>Shown once, before the first question. The member chooses which parts of their account the assistant may read, sees where it runs and what is kept, and can change it later in More. The bracketed details wait on the AI vendor decision record; nothing here ships until they are filled.</span></figcaption>
+<figcaption><b><em>9.5</em>Assistant · before first use<span class="ph p3">Phase 3</span></b><span>Shown once before the first question. The member chooses what the assistant may read and can change it later in More. Bracketed details await the vendor decision.</span></figcaption>
 <div class="phone"><div class="scr">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-home" aria-label="Close"><i data-i="x" data-w="2.2"></i></a></div>
@@ -3454,7 +3454,7 @@ html{scroll-behavior:smooth}
 
 <section class="flow" id="f5">
 <h2>10 · Arabic, right to left</h2>
-<p>Every screen in English and Arabic, chosen by the member on the first welcome slide or in More, with full right-to-left layout: navigation, back arrows, progress bars and lists all mirror. Amounts and card numbers keep Western digits; whether to use Arabic-Indic digits is a question for the insurer. Plan and benefit names come from the insurer's settings in each language. New in v4 (review comment 9): the components the review called untested, which are result gauges, a form, a chart, Eastern Arabic digits and consent (10.6 to 10.10). The full Arabic board follows once the English copy is frozen.</p>
+<p>Every screen in English and Arabic, with a full right-to-left layout. Amounts and card numbers keep Western digits by default. Gauges, forms, charts, digits and consent are shown in 10.6 to 10.10; the complete Arabic set follows once the English copy is final.</p>
 <div class="board">
 
 <figure class="shot" id="s-home-ar">
@@ -3563,7 +3563,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-iq1-ar">
-<figcaption><b><em>10.4</em>Welcome · Arabic</b><span>Mirror of 1.3. What a phone set to Arabic sees on first launch, anywhere.</span></figcaption>
+<figcaption><b><em>10.4</em>Welcome · Arabic</b><span>Mirror of 1.3, as seen on first launch by a phone set to Arabic.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main wide">
     <div class="appbar"><span class="chip" style="padding:6px 12px;background:#fff"><i data-i="globe" data-s="15"></i>العربية<i data-i="down" data-s="13" data-w="2.4"></i></span><div class="spacer"></div><a href="#s-link-ar" style="font-size:14px;font-weight:600;text-decoration:none">تخطَّ</a></div>
@@ -3618,7 +3618,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-result-ar">
-<figcaption><b><em>10.6</em>Result gauges · Arabic</b><span>Mirror of 4.2. Decision: the gauge mirrors with the page, so it reads right to left, Low on the right and High on the left, matching how Arabic readers scan every other bar in the app. Values, units and ranges stay left-to-right inside isolated runs, so "13 – 17" never flips to "17 – 13".</span></figcaption>
+<figcaption><b><em>10.6</em>Result gauges · Arabic</b><span>Mirror of 4.2. Gauges read right to left with Low on the right, while values and ranges keep their left-to-right order.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-results" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1;font-size:18px">صورة دم كاملة</h2><a class="icobtn" href="#s-record-view" aria-label="مشاركة"><i data-i="share" data-s="18"></i></a></div>
@@ -3647,7 +3647,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-newclaim-ar">
-<figcaption><b><em>10.7</em>New claim · Arabic</b><span>Mirror of 5.12, with the v4 autocomplete: the provider list comes from the network in Arabic, and the amount field keeps the digits left-to-right with د.ع on the reading end. Date and amount fields line up from the right.</span></figcaption>
+<figcaption><b><em>10.7</em>New claim · Arabic</b><span>Mirror of 5.12. Provider suggestions appear in Arabic, and amounts keep left-to-right digits with د.ع at the reading end.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-claims-ar" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">مطالبة جديدة</h2><span class="cap">1 من 2</span></div>
@@ -3681,7 +3681,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-hr-ar">
-<figcaption><b><em>10.8</em>Heart-rate chart · Arabic</b><span>Mirror of 7.5. Time runs right to left: Thursday sits on the right and today on the left. Day names are Arabic; the axis numbers and readings stay in Western digits, like every amount on the board. The dashed resting line and its label move to the right-hand edge.</span></figcaption>
+<figcaption><b><em>10.8</em>Heart-rate chart · Arabic</b><span>Mirror of 7.5. Time runs right to left with Arabic day names, while readings stay in Western digits.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-vitals" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">نبض القلب</h2></div>
@@ -3715,7 +3715,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-pay-ar-digits">
-<figcaption><b><em>10.9</em>Payments · Arabic-Indic digits</b><span>Mirror of 5.17 using ٠١٢٣٤٥٦٧٨٩ instead of Western digits, so the insurer can compare the two side by side. Recommendation: keep Western digits by default, as Iraqi banking apps, Qi Card receipts and the insurer's own card numbers do; offer Arabic-Indic as a display setting only. Reference numbers such as card endings stay Western either way, so they match what is printed.</span></figcaption>
+<figcaption><b><em>10.9</em>Payments · Arabic-Indic digits</b><span>Mirror of 5.17 in Arabic-Indic digits, for comparison. We recommend Western digits by default, as Iraqi banking apps use, with Arabic-Indic as an option.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main">
     <div class="appbar"><a class="back" href="#s-ins" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">المدفوعات</h2><span class="pill navy">٠١٢٣ أرقام هندية</span></div>
@@ -3740,7 +3740,7 @@ html{scroll-behavior:smooth}
 </figure>
 
 <figure class="shot" id="s-consent-ar">
-<figcaption><b><em>10.10</em>Consent · Arabic</b><span>Mirror of 2.7. Each consent is its own unticked box with its own link, so a member can agree to the required ones without agreeing to marketing. Checkboxes sit on the right, where an Arabic reader starts the line.</span></figcaption>
+<figcaption><b><em>10.10</em>Consent · Arabic</b><span>Mirror of 2.7. Separate unticked boxes, placed on the right where an Arabic reader starts the line.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main wide">
     <div class="appbar"><a class="back" href="#s-create" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><span class="cap">الخطوة 1 من 3</span></div>
@@ -3766,7 +3766,7 @@ html{scroll-behavior:smooth}
 <!-- ======================= ROADMAP ======================= -->
 <section class="flow" id="f-roadmap">
 <h2>11 · Phases and dependencies</h2>
-<p>The brief's request: every tab feature mapped to a delivery phase, with what it waits on. Until a feature is live for a member, its place in the app shows <span class="soon">Coming soon</span>. A screen without a badge on this board is Phase 1. Where a feature is split, the first part ships in the earlier phase and the badge marks the later part. The phase split is a proposal for review, not something the brief fixes.</p>
+<p>Each feature mapped to a delivery phase and what it depends on. Until a feature is live, it shows <span class="soon">Coming soon</span>. Screens without a badge are Phase 1. The split is proposed for discussion.</p>
 
 <div class="phases">
   <div class="phase"><span class="ph p1" style="margin:0">Phase 1</span><b>Digital health foundation</b><span>One app for every member, English and Arabic with full RTL. Al Ettihad and iCare connected. Self-service eligibility, benefits and network. Self-pay onboarding, booking, payments, banners.</span></div>
@@ -3777,42 +3777,42 @@ html{scroll-behavior:smooth}
 <div class="rm"><div class="rmx"><table>
 <thead><tr><th>Tab</th><th>Feature</th><th>Phase</th><th>Depends on</th></tr></thead>
 <tbody>
-<tr><td rowspan="6">Vault</td><td>Needs your attention: one list of everything waiting on the member</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> <span class="dp pay">Payment gateway</span> Built from claim, approval, payment, booking and renewal events. Needs status pushed by the TPA.</td></tr>
-<tr><td>Emergency: call buttons, nearest 24-hour emergency departments, location</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> Emergency numbers set per country, the network list with 24-hour flags, a maps SDK. Works offline from the cache.</td></tr>
+<tr><td rowspan="6">Vault</td><td>Needs your attention: one list of everything waiting on the member</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> <span class="dp pay">Payment gateway</span> Claim, approval, payment, booking and renewal events, with status pushed by the TPA.</td></tr>
+<tr><td>Emergency: call buttons, nearest 24-hour emergency departments, location</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> Emergency numbers per country, 24-hour network hospitals and a maps SDK. Cached for offline use.</td></tr>
 <tr><td>Latest results with report links</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> Labs already connected are live. New labs follow the Results row below.</td></tr>
-<tr><td>Advertising banners</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> Today's banner/slider endpoint, moved to Laravel with audience targeting. Needs an owner for ad sales and approval.</td></tr>
+<tr><td>Advertising banners</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> The existing banner service with audience targeting. Needs an owner for ad sales and approval.</td></tr>
 <tr><td>Insurance summary: card, coverage status, quick links</td><td><span class="ph p1">1</span></td><td><span class="dp ins">Insurer API</span> <span class="dp tpa">TPA API</span></td></tr>
 <tr><td>Reminders: medications, tests, appointments</td><td><span class="ph p1">1</span></td><td><span class="dp none">None</span> Local notifications. Appointments come from in-app bookings.</td></tr>
-<tr class="tab"><td rowspan="4">Results</td><td>Today's structure kept, lab logo on each result</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> One logo field per lab, which the lab admin form already has.</td></tr>
-<tr class="tab"><td>Results from labs not connected yet</td><td><span class="ph p2">2</span></td><td><span class="dp prov">Provider systems</span> Each lab's LIS, through the existing per-lab driver model. Member uploads cover the gap; the lab shows Coming soon until then.</td></tr>
+<tr class="tab"><td rowspan="4">Results</td><td>Current structure kept, lab logo on each result</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> One logo per lab, already supported in lab settings.</td></tr>
+<tr class="tab"><td>Results from labs not connected yet</td><td><span class="ph p2">2</span></td><td><span class="dp prov">Provider systems</span> Each lab's LIS through the existing integration model. Member uploads fill the gap until then.</td></tr>
 <tr class="tab"><td>Test reminders, upcoming and recurring</td><td><span class="ph p1">1</span></td><td><span class="dp none">None</span></td></tr>
-<tr class="tab"><td>Secure sharing: code, 72-hour default, access log, stop sharing</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> Signed links, view log, an SMS-free code shown to the member.</td></tr>
-<tr><td rowspan="9">Insurance</td><td>Digital card, policy, eligibility, active coverage</td><td><span class="ph p1">1</span></td><td><span class="dp ins">Insurer API</span> <span class="dp tpa">TPA API</span> Member lookup by reference number plus date of birth, live eligibility, card data in Arabic and English.</td></tr>
-<tr><td>Table of benefits, limits, exclusions, co-pays</td><td><span class="ph p1">1</span></td><td><span class="dp ins">Insurer API</span> Structured plan data, not a PDF, in both languages. Used balances from the TPA.</td></tr>
-<tr><td>Provider network: hospitals, labs, radiology, doctors, pharmacies</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp tpa">TPA API</span> Network list with type, location, billing mode. Phase 2 grows it as providers join.</td></tr>
-<tr><td>Claims: submit, history, status</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp tpa">TPA API</span> Phase 1: member reimbursement claims, documents, status updates pushed to us. Phase 2: provider-submitted claims and faster decisions.</td></tr>
+<tr class="tab"><td>Secure sharing: code, 72-hour default, access log, stop sharing</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> Signed links, a view log and an access code shown to the member.</td></tr>
+<tr><td rowspan="9">Insurance</td><td>Digital card, policy, eligibility, active coverage</td><td><span class="ph p1">1</span></td><td><span class="dp ins">Insurer API</span> <span class="dp tpa">TPA API</span> Member lookup by reference number and date of birth, live eligibility, card data in both languages.</td></tr>
+<tr><td>Table of benefits, limits, exclusions, co-pays</td><td><span class="ph p1">1</span></td><td><span class="dp ins">Insurer API</span> Structured plan data in both languages. Used balances from the TPA.</td></tr>
+<tr><td>Provider network: hospitals, labs, radiology, doctors, pharmacies</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp tpa">TPA API</span> Network list with type, location and billing mode, growing in Phase 2.</td></tr>
+<tr><td>Claims: submit, history, status</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp tpa">TPA API</span> Phase 1: member claims with documents and pushed status. Phase 2: provider claims and faster decisions.</td></tr>
 <tr><td>Pre-approvals: track, then request</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp tpa">TPA API</span> <span class="dp prov">Provider systems</span> Tracking first; requests from the member or provider in Phase 2.</td></tr>
-<tr><td>Payments: co-pays, self-pay services, premiums</td><td><span class="ph p1">1</span></td><td><span class="dp pay">Payment gateway</span> <span class="dp ins">Insurer</span> A gateway with cards and local wallets, refunds and webhooks. Premiums only if the insurer agrees to collect them this way.</td></tr>
-<tr><td>Card verification: rotating code, provider verifier</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> MedVault's lightweight verifier in Phase 1, or the check inside iCare's provider portal. Recording the visit comes in Phase 2.</td></tr>
-<tr><td>Claim conversation and escalation</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> Phase 1: messages relayed by MedVault support. Phase 2: direct with iCare through a messaging API.</td></tr>
+<tr><td>Payments: co-pays, self-pay services, premiums</td><td><span class="ph p1">1</span></td><td><span class="dp pay">Payment gateway</span> <span class="dp ins">Insurer</span> Cards, local wallets, refunds and webhooks. Premiums only if the insurer agrees.</td></tr>
+<tr><td>Card verification: rotating code, provider verifier</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> A MedVault verifier or iCare's provider portal in Phase 1. Visit recording in Phase 2.</td></tr>
+<tr><td>Claim conversation and escalation</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> Phase 1: relayed by MedVault support. Phase 2: direct with iCare.</td></tr>
 <tr><td>Appointment booking</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp prov">Provider systems</span> Request-and-confirm first; live slots once provider schedules are integrated.</td></tr>
-<tr class="tab"><td rowspan="5">Health</td><td>Sensors through Apple Health and Health Connect</td><td><span class="ph p1">1</span></td><td><span class="dp sen">Sensor integrations</span> No partner needed. Store health-data declarations and review.</td></tr>
+<tr class="tab"><td rowspan="5">Health</td><td>Sensors through Apple Health and Health Connect</td><td><span class="ph p1">1</span></td><td><span class="dp sen">Sensor integrations</span> No partner needed. App store health-data declarations and review.</td></tr>
 <tr class="tab"><td>Direct Bluetooth devices, such as glucose meters</td><td><span class="ph p2">2</span></td><td><span class="dp sen">Sensor integrations</span> Vendor SDKs and testing per model.</td></tr>
 <tr class="tab"><td>Health figures with sources, then AI summaries</td><td><span class="ph p1">1</span> <span class="ph p3">3</span></td><td><span class="dp sen">Sensor integrations</span> <span class="dp ai">AI service</span> Figures in Phase 1; summaries once the AI service is chosen.</td></tr>
 <tr class="tab"><td>Medications, schedules, reminders</td><td><span class="ph p1">1</span></td><td><span class="dp none">None</span></td></tr>
 <tr class="tab"><td>Prescriptions: add, upload, view; then fulfilment</td><td><span class="ph p1">1</span> <span class="ph p3">3</span></td><td><span class="dp prov">Provider systems</span> <span class="dp pay">Payment gateway</span> Upload in Phase 1. Pharmacy ordering and delivery in Phase 3.</td></tr>
 <tr><td rowspan="1">More</td><td>Profile, family, settings, language, support, account</td><td><span class="ph p1">1</span></td><td><span class="dp own">Our backend</span> SMS gateway for family consent, already used for sign-up.</td></tr>
-<tr class="tab"><td rowspan="2">All tabs</td><td>AI assistant</td><td><span class="ph p3">3</span></td><td><span class="dp ai">AI service</span> Where member data may be processed must be settled first.</td></tr>
-<tr class="tab"><td>Telehealth and caregiver tools</td><td><span class="ph p3">3</span></td><td><span class="dp prov">Provider systems</span> A video provider and doctor onboarding. Family access in More is the starting point.</td></tr>
+<tr class="tab"><td rowspan="2">All tabs</td><td>AI assistant</td><td><span class="ph p3">3</span></td><td><span class="dp ai">AI service</span> Data processing location to be agreed first.</td></tr>
+<tr class="tab"><td>Telehealth and caregiver tools</td><td><span class="ph p3">3</span></td><td><span class="dp prov">Provider systems</span> A video provider and doctor onboarding, building on family access in More.</td></tr>
 </tbody></table></div></div>
 
 <div class="deps">
   <div class="dep"><h3><span class="dp ins">Insurer API</span>Al Ettihad</h3><ul><li>Member lookup by reference number and date of birth</li><li>Eligibility and coverage status, live</li><li>Plan data: benefits, limits, exclusions, co-pays, in Arabic and English</li><li>Card artwork and branding</li><li>Whether premiums can be collected in the app</li></ul><span class="blk">Blocks: Vault insurance summary, card, Table of benefits, renewal</span></div>
   <div class="dep"><h3><span class="dp tpa">TPA API</span>iCare</h3><ul><li>Provider network with type, location and billing mode</li><li>Claim submission with documents, and the document list per claim type</li><li>Claim and pre-approval status, pushed to us rather than polled</li><li>Used balances per benefit</li></ul><span class="blk">Blocks: network, claims, pre-approvals, remaining limits</span></div>
   <div class="dep"><h3><span class="dp pay">Payment gateway</span>to be chosen</h3><ul><li>A merchant account in the currencies we charge in</li><li>Cards and the common wallets</li><li>Hosted card entry, so MedVault never stores card data</li><li>Refunds and payment webhooks</li></ul><span class="blk">Blocks: Payments, self-pay booking, renewal</span></div>
-  <div class="dep"><h3><span class="dp prov">Provider systems</span>labs, hospitals, radiology, pharmacies</h3><ul><li>Lab result feeds (LIS), one driver per response shape, as today</li><li>Appointment schedules</li><li>Provider-side claims and pre-approval requests</li><li>Pharmacy ordering for fulfilment</li></ul><span class="blk">Blocks: results from new labs, live booking, Phase 2 claims, Phase 3 delivery</span></div>
+  <div class="dep"><h3><span class="dp prov">Provider systems</span>labs, hospitals, radiology, pharmacies</h3><ul><li>Lab result feeds (LIS), using the current integration model</li><li>Appointment schedules</li><li>Provider-side claims and pre-approval requests</li><li>Pharmacy ordering for fulfilment</li></ul><span class="blk">Blocks: results from new labs, live booking, Phase 2 claims, Phase 3 delivery</span></div>
   <div class="dep"><h3><span class="dp sen">Sensor integrations</span>Apple Health, Health Connect, devices</h3><ul><li>HealthKit and Health Connect permissions and store declarations</li><li>Later: vendor SDKs for direct Bluetooth devices</li></ul><span class="blk">Blocks: Sensors, Health figures</span></div>
-  <div class="dep"><h3><span class="dp ai">AI service</span>to be chosen</h3><ul><li>The model and vendor</li><li>Where member data is processed, and the consent wording</li><li>The same safety rules as today's AI Summary: no "normal" without a lab range</li></ul><span class="blk">Blocks: AI summaries, assistant, analytics</span></div>
+  <div class="dep"><h3><span class="dp ai">AI service</span>to be chosen</h3><ul><li>The model and vendor</li><li>Where member data is processed, and the consent wording</li><li>The current AI summary safety rules, such as no "normal" without a lab range</li></ul><span class="blk">Blocks: AI summaries, assistant, analytics</span></div>
 </div>
 </section>
 
