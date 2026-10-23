@@ -289,7 +289,7 @@ html{scroll-behavior:smooth}
 <div class="rm"><div class="rmx"><table>
 <thead><tr><th>#</th><th>Comment</th><th>Response</th><th>Where</th><th>Status</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Booking has no flow</td><td>The member requests a service, day and time window, and the provider confirms or suggests another time. Pay at the provider or in the app. Live slots follow in Phase 2.</td><td><a href="#s-book">5.26</a>, <a href="#s-book-sent">5.27</a>, <a href="#s-book-confirmed">5.28</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Fee model to decide</span></td></tr>
+<tr><td>1</td><td>Booking has no flow</td><td>The member requests a service, day and time window, and the provider confirms or suggests another time. Pay at the provider or in the app. Live slots follow in Phase 2. <b>Follow-up:</b> agreed as a Phase 1 priority, to bring in self-pay members; no Iraqi app offers it yet. Providers would answer requests in iCare's provider portal if it can take them.</td><td><a href="#s-book">5.26</a>, <a href="#s-book-sent">5.27</a>, <a href="#s-book-confirmed">5.28</a></td><td><span class="pill ok">Designed</span> <span class="pill ok">Phase 1 priority</span> <span class="pill warn">Fee model to decide</span> <span class="pill warn">Confirm with iCare: provider portal</span></td></tr>
 <tr><td>2</td><td>Share links need stronger controls</td><td>A 6-digit code, shared separately, is on by default. Links expire after 72 hours by default. Every view is logged and any link can be stopped. Reports show name and age only.</td><td><a href="#s-record-view">4.3</a>, <a href="#s-share-links">4.7</a>, <a href="#s-share-code">4.8</a>, <a href="#s-report-share">7.12</a>, <a href="#s-report-doctor">7.13</a></td><td><span class="pill ok">Designed</span></td></tr>
 <tr><td>3</td><td>Core screens missing</td><td>Log in, password reset, guest mode, Face ID set-up, permission prompts, account deletion, and offline and error states.</td><td><a href="#s-login">1.6</a> to <a href="#s-perm-off">1.12</a>, <a href="#s-delete">8.4</a> to <a href="#s-err-server">8.7</a></td><td><span class="pill ok">Designed</span></td></tr>
 <tr><td>4</td><td>No consent at sign-up</td><td>Separate, unticked consents before the account is created, for terms, health data, insurer sharing and marketing. Each is stored with its wording and date, and can be withdrawn in More.</td><td><a href="#s-consent">2.7</a>, <a href="#s-consent-ar">10.10</a>, <a href="#s-privacy">8.9</a></td><td><span class="pill ok">Designed</span> <span class="pill bad">Needs legal advice: LB, IQ</span></td></tr>
@@ -297,7 +297,7 @@ html{scroll-behavior:smooth}
 <tr><td>6</td><td>Claim submission is manual</td><td>Claims start from a visit or payment already in MedVault, with provider autocomplete and documents attached from Results or Prescriptions. Unsent claims stay as drafts. Invoice scanning in Phase 2.</td><td><a href="#s-newclaim">5.12</a>, <a href="#s-docs">5.13</a>, <a href="#s-attach">5.19</a>, <a href="#s-claims">5.10</a></td><td><span class="pill ok">Designed</span></td></tr>
 <tr><td>7</td><td>Benefit data model unclear</td><td>A proposed model with limits at three levels, per person or per family. Used means paid plus approved, with pending shown separately. The overall limit now leads the Table of benefits.</td><td><a href="#rv-benefits">Model below</a>, <a href="#s-benefits">5.5</a></td><td><span class="pill warn">Proposal · confirm with Al Ettihad, iCare</span></td></tr>
 <tr><td>8</td><td>Card QR lacks a verifier</td><td>The QR is now a signed code that refreshes every minute, with a 24-hour offline code, so screenshots expire. Providers scan it in a verifier that shows eligibility only.</td><td><a href="#s-card">5.3</a>, <a href="#s-verify">5.25</a>, <a href="#rv-qr">model below</a></td><td><span class="pill ok">Designed</span> <span class="pill warn">Portal owner to decide</span></td></tr>
-<tr><td>9</td><td>Arabic coverage is thin</td><td>Five new Arabic screens cover gauges, a form, a chart, digit style and consent, bringing the Arabic set to eleven. Every screen follows in Arabic once the English copy is signed off.</td><td><a href="#s-result-ar">10.6</a> to <a href="#s-consent-ar">10.10</a></td><td><span class="pill info">In progress</span></td></tr>
+<tr><td>9</td><td>Arabic coverage is thin</td><td>Five new Arabic screens cover gauges, a form, a chart, digit style and consent, bringing the Arabic set to eleven. Every screen follows in Arabic once the English copy is signed off. <b>Follow-up:</b> the three terms flagged are corrected (Decided, Insurance reference number, the result title), and every Arabic string goes to a native medical translator before build, using the <a href="#rv-arabic">term list below</a>.</td><td><a href="#s-claims-ar">10.3</a>, <a href="#s-link-ar">10.5</a>, <a href="#s-result-ar">10.6</a> to <a href="#s-consent-ar">10.10</a></td><td><span class="pill info">In progress</span> <span class="pill warn">Native review before build</span></td></tr>
 <tr><td>10</td><td>Notification privacy gap</td><td>Lock-screen details are hidden by default for every notification type, which shows only "You have a new update". Family names have their own setting.</td><td><a href="#s-notif-settings">8.8</a>, <a href="#s-notifs">3.5</a>, <a href="#s-reminder">7.8</a></td><td><span class="pill ok">Designed</span></td></tr>
 <tr><td>11</td><td>Payment states missing</td><td>A full payment state machine, below. Bank transfer and branch payments show as pending with a reference and deadline. Failures give the reason, confirm no charge and offer a retry.</td><td><a href="#s-payments">5.17</a>, <a href="#s-pay-pending">5.23</a>, <a href="#s-pay-failed">5.24</a>, <a href="#rv-pay">diagram</a></td><td><span class="pill ok">Designed</span></td></tr>
 <tr><td>12</td><td>Accessibility not specified</td><td>An accessibility spec with measured contrast failures and proposed fixes, plus Vault at the largest text size.</td><td><a href="#rv-a11y">Spec below</a>, <a href="#s-a11y">3.9</a></td><td><span class="pill warn">Spec · prototype test to run</span></td></tr>
@@ -308,6 +308,13 @@ html{scroll-behavior:smooth}
 </tbody></table></div></div>
 
 <div class="deps">
+  <div class="dep" id="rv-arabic"><h3><span class="dp own">#9</span>Arabic terms · for native review</h3><ul>
+    <li><b>Decided</b> (claim filter): <s>تم البت</s> → المعالجة المؤكدة</li>
+    <li><b>Insurance reference number</b>: <s>الرقم المرجعي للتأمين</s> → رقم التأمين, used on the card and in sign-up</li>
+    <li><b>Result screen title</b>: <s>صورة دم كاملة</s> → موجز التحليل</li>
+    <li>Kept for review: قيد المعالجة (In progress), مطلوب معلومات (Info needed), تمت الموافقة (Approved), ملخص ذكي (AI summary), السكر التراكمي (HbA1c).</li>
+  </ul><span class="blk">Every Arabic screen is machine-assisted until a native medical translator signs it off. Medical terms are checked against the wording Iraqi labs and Al Ettihad already use.</span></div>
+
   <div class="dep" id="rv-benefits"><h3><span class="dp ins">#7</span>Benefit data model · proposal</h3><ul>
     <li><b>Levels:</b> overall annual limit › benefit (outpatient, labs and imaging, medicines, hospital, maternity…) › sub-limit (for example MRI per year, sessions per approval).</li>
     <li><b>Scope per limit:</b> per member, shared by the family, or both (for example 5,000,000 family and 2,000,000 per person). The app shows whichever runs out first.</li>
@@ -3540,7 +3547,7 @@ html{scroll-behavior:smooth}
   <div class="main">
     <div class="appbar"><a class="back" href="#s-home-ar" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1">المطالبات</h2></div>
     <p class="cap" style="margin:2px 0 12px">أحمد وفردان من العائلة · 2026</p>
-    <div style="display:flex;gap:8px;margin-bottom:14px"><span class="chip on">الكل <span class="n">3</span></span><span class="chip">قيد المعالجة <span class="n">1</span></span><span class="chip">تم البت <span class="n">2</span></span></div>
+    <div style="display:flex;gap:8px;margin-bottom:14px"><span class="chip on">الكل <span class="n">3</span></span><span class="chip">قيد المعالجة <span class="n">1</span></span><span class="chip">المعالجة المؤكدة <span class="n">2</span></span></div>
     <div style="display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;gap:12px;padding:13px 14px;border-radius:14px;background:#FEF9C3;border:1px solid rgba(202,138,4,.45)">
         <span style="flex:1;display:flex;flex-direction:column;gap:3px"><span style="display:flex;justify-content:space-between;gap:8px"><b style="font-size:13.5px">استشارة طبية</b><span class="pill" style="background:#fff;color:#854D0E">مطلوب معلومات</span></span><span class="cap">CL-2307 · سارة · 2 تشرين الأول</span><span style="font-size:12px;font-weight:600;color:#854D0E">ارفع الوصفة الطبية للمتابعة</span></span>
@@ -3596,15 +3603,15 @@ html{scroll-behavior:smooth}
     <div class="appbar"><a class="back" href="#s-otp" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><div class="spacer"></div><span class="cap">الخطوة 3 من 3</span></div>
     <div class="steps" style="margin:10px 0 18px"><i class="on"></i><i class="on"></i><i class="on"></i></div>
     <h2 class="h1">اربط تأمينك الصحي</h2>
-    <p class="sub" style="margin:6px 0 16px">ستجد الرقم المرجعي على بطاقة التأمين الخاصة بك.</p>
+    <p class="sub" style="margin:6px 0 16px">ستجد رقم التأمين على بطاقة التأمين الخاصة بك.</p>
     <div class="navyc" style="padding:16px 18px 18px">
       <img class="wmk inv" src="images/logo2.png" alt="" aria-hidden="true">
       <div style="display:flex;justify-content:space-between;align-items:center"><span class="k">[اسم شركة التأمين]</span><span class="k" style="color:#fff;opacity:.7">بطاقة صحية</span></div>
       <div style="font-size:15px;font-weight:700;margin:14px 0 10px">أحمد كريم حسن</div>
       <div dir="ltr" style="display:inline-flex;border:2px solid #4ADE80;border-radius:8px;padding:4px 9px;font-size:13px;font-weight:600;letter-spacing:.04em;font-family:Poppins,sans-serif">IQ-1048-22017-01</div>
-      <div style="font-size:10.5px;color:var(--sky);margin-top:6px">الرقم المرجعي</div>
+      <div style="font-size:10.5px;color:var(--sky);margin-top:6px">رقم التأمين</div>
     </div>
-    <label class="lbl" for="la-ref" style="margin-top:20px">الرقم المرجعي للتأمين</label>
+    <label class="lbl" for="la-ref" style="margin-top:20px">رقم التأمين</label>
     <div class="field"><i data-i="shield" class="ic"></i><input id="la-ref" dir="ltr" value="IQ-1048-22017-01" style="text-align:right;font-family:Poppins,sans-serif"></div>
     <div style="display:flex;gap:10px;margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(43,169,169,.09)">
       <i data-i="info" data-s="18" style="color:var(--turq-ink);margin-top:2px"></i>
@@ -3621,7 +3628,7 @@ html{scroll-behavior:smooth}
 <figcaption><b><em>10.6</em>Result gauges · Arabic</b><span>Mirror of 4.2. Gauges read right to left with Low on the right, while values and ranges keep their left-to-right order.</span></figcaption>
 <div class="phone"><div class="scr" dir="rtl" lang="ar">
   <div class="main">
-    <div class="appbar"><a class="back" href="#s-results" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1;font-size:18px">صورة دم كاملة</h2><a class="icobtn" href="#s-record-view" aria-label="مشاركة"><i data-i="share" data-s="18"></i></a></div>
+    <div class="appbar"><a class="back" href="#s-results" aria-label="رجوع"><i data-i="back" data-w="2.4"></i></a><h2 class="h2" style="flex:1;font-size:18px">موجز التحليل</h2><a class="icobtn" href="#s-record-view" aria-label="مشاركة"><i data-i="share" data-s="18"></i></a></div>
     <div class="card" style="padding:14px;margin-top:10px;display:flex;gap:12px;align-items:center">
       <span class="lg" style="width:48px;height:48px;font-size:13px;background:#E3F1F8;color:#1E5A7A">SML</span>
       <span style="flex:1;display:flex;flex-direction:column;gap:2px"><b style="font-size:14px">مختبر نموذجي</b><span class="cap">طلب <bdi>20418</bdi> · 9 تشرين الأول 2026 · أحمد</span></span>
@@ -3795,7 +3802,7 @@ html{scroll-behavior:smooth}
 <tr><td>Payments: co-pays, self-pay services, premiums</td><td><span class="ph p1">1</span></td><td><span class="dp pay">Payment gateway</span> <span class="dp ins">Insurer</span> Cards, local wallets, refunds and webhooks. Premiums only if the insurer agrees.</td></tr>
 <tr><td>Card verification: rotating code, provider verifier</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> A MedVault verifier or iCare's provider portal in Phase 1. Visit recording in Phase 2.</td></tr>
 <tr><td>Claim conversation and escalation</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA API</span> Phase 1: relayed by MedVault support. Phase 2: direct with iCare.</td></tr>
-<tr><td>Appointment booking</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp prov">Provider systems</span> Request-and-confirm first; live slots once provider schedules are integrated.</td></tr>
+<tr><td>Appointment booking</td><td><span class="ph p1">1</span> <span class="ph p2">2</span></td><td><span class="dp own">Our backend</span> <span class="dp tpa">TPA portal</span> <span class="dp prov">Provider systems</span> Phase 1 priority for self-pay members. Request-and-confirm first, answered in iCare's provider portal if feasible; live slots once provider schedules are integrated.</td></tr>
 <tr class="tab"><td rowspan="5">Health</td><td>Sensors through Apple Health and Health Connect</td><td><span class="ph p1">1</span></td><td><span class="dp sen">Sensor integrations</span> No partner needed. App store health-data declarations and review.</td></tr>
 <tr class="tab"><td>Direct Bluetooth devices, such as glucose meters</td><td><span class="ph p2">2</span></td><td><span class="dp sen">Sensor integrations</span> Vendor SDKs and testing per model.</td></tr>
 <tr class="tab"><td>Health figures with sources, then AI summaries</td><td><span class="ph p1">1</span> <span class="ph p3">3</span></td><td><span class="dp sen">Sensor integrations</span> <span class="dp ai">AI service</span> Figures in Phase 1; summaries once the AI service is chosen.</td></tr>
